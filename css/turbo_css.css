@@ -1,0 +1,583 @@
+
+/* MAIN STYLES FOR TURBO-PAGE */
+
+body {
+    font-family: Helvetica Neue, arial, sans-serif;
+    margin: 0;
+}
+
+button {
+    color: #fff;
+    border: none;
+    height: 32px;
+    font-family: Helvetica Neue, arial, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    padding: 17px 21px;
+    color: rgba(43, 43, 43, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #cdcdcd;
+}
+
+header img {
+    width: 120px;
+}
+
+header .header-phone {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+    padding-top: 8px;
+}
+
+header .header-phone a {
+    text-decoration: none;
+}
+
+header .header-phone .header-phone-icon {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(43, 43, 43, 0.3);
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    line-height: 0;
+    position: relative;
+}
+
+header .header-phone .header-phone-icon::before{
+    content: "\f095";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+header .header-phone .header-phone-icon::before {
+    color: black;
+    font-size: 20px;
+}
+
+header .header-phone .header-phone-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+section {
+    position: relative;
+    line-height: 24px;
+}
+
+section .main-section {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 15px 20px;
+
+}
+
+section .main-section .main-title {
+    font-size: 44px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+section .main-section .main-title p {
+    margin: 0;
+}
+
+section .main-section .main-description {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+section .main-section .main-description span {
+    color: rgba(254, 71, 90, 1);
+}
+
+section .button-list {
+    position: relative;
+    margin-top: 38px;
+    text-align: center;
+}
+
+section .button-list span {
+    display: inline-block;
+    color: #000000;
+    padding: 0 15px;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 50px;
+    border-radius: 5px;
+}
+
+section .button-list a {
+    margin-top: 15px;
+    margin-right: 15px;
+    min-width: 120px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+section .button-list a .whatsapp-button {
+    color: #fff;
+    background-color: rgba(42, 206, 40, 1);
+    height: inherit;
+}
+
+section .button-list a .viber-button {
+    color: #fff;
+    background-color: rgba(138, 11, 164, 1);
+    height: inherit;
+}
+
+section .button-list a .online-button {
+    background-color: rgba(228, 244, 0, 1);
+    height: inherit;
+}
+
+section .main-image {
+    text-align: center;
+    margin-top: 100px;
+}
+
+section .before-form {
+    text-align: center;
+}
+
+section .before-form .before-form-title {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+section .before-form .before-form-title p {
+    margin-top: 20px;
+}
+
+section .before-form .before-form-title span {
+    color: rgba(254, 71, 90, 1);
+}
+
+section .before-form .before-form-description {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+section .before-form .before-form-description p {
+    font-size: 16px;
+}
+
+section .form-section {
+    font-family: Helvetica, arial, sans-serif;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    max-width: 460px;
+}
+
+section .form-section form {
+    font-size: 16px;
+}
+
+section .form-section form input {
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .2);
+    width: 95%;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+    line-height: 20px;
+    border: solid transparent;
+    background: 0 0;
+    color: #949494;
+}
+
+section .form-section form button {
+    margin-top: 20px;
+    min-width: 100px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(238, 12, 12, 1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+section .form-section .submit-button {
+    text-align: center;
+}
+
+section .form-section .agreement {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+section .agreement .agreement-text {
+    color: #000;
+    opacity: .3;
+}
+
+section .agreement .agreement-link {
+    text-decoration: none;
+    color: inherit;
+    opacity: .5;
+}
+
+section .agreement .agreement-link:hover {
+    opacity: 1;
+}
+
+section .agreement .agreement-full-modal a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer {
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #333;
+    margin: 0 auto;
+}
+
+footer .footer-middle {
+    position: relative;
+    line-height: 24px;
+    max-width: 940px;
+    margin: auto;
+    padding: 13px 24px;
+    text-align: left;
+    opacity: .6;
+
+}
+
+footer .footer-middle .footer-middle-agreement-modal {
+    cursor: pointer;
+}
+
+footer .footer-middle .footer-middle-agreement-modal a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* MEDIA-QUERIES */
+@media screen and (max-width: 980px) {
+    section .main-section .main-title {
+        font-size: 34px;
+        line-height: 1.06;
+    }
+
+    section .main-section .main-description {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    section .button-list {
+        margin-top: 0;
+    }
+
+    section .button-list span {
+        margin-top: 15px;
+    }
+
+    section .main-image img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section .button-list span {
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    section .button-list a {
+        margin-right: 0;
+    }
+
+    section .button-list span {
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    section .main-image {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    section .form-section .submit-button span {
+        display: block;
+    }
+
+    section .form-section .submit-button button {
+        width: 100%;
+    }
+
+    section .form-section .agreement {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .header-phone .header-phone-number {
+        display: none;
+    }
+
+    header .header-phone {
+        margin-right: 0;
+    }
+
+    header .header-phone .header-phone-icon {
+        border-radius: 3px;
+        background-color: rgba(235, 48, 48, 1);
+    }
+
+    header .header-phone .header-phone-icon::before {
+        color: white;
+    }
+
+    section .button-list span {
+        display: block;
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    section .button-list a {
+        margin-right: 0;
+    }
+
+    section .before-form .before-form-title {
+        font-size: 28px;
+    }
+}
+
+/* MODAL WINDOWS */
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    text-align: center;
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    display: block;
+    background-color: rgb(229, 19, 19);
+    color: #FFFFFF;
+    line-height: 25px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+@media screen and (max-width: 650px) {
+    .modalDialog > div {
+        width: 80%;
+    }
+}
+
+
+
+.soc-btns {
+    text-align: center;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.soc-btns_circle .soc-btns__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.soc-btns_circle .soc-btns__link {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #000;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.soc-btns__link {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.soc-btns_circle .soc-btns__link svg {
+    width: 30px!important;
+    height: 30px!important;
+    vertical-align: middle;
+    transform: translateY(-5px);
+}
+
+.soc-btns__link svg {
+    width: 20px!important;
+    height: 20px!important;
+    fill: #000;
+}
+
+.soc-btns__link:hover {
+    border-color: #ed1c24;
+}
+
+.soc-btns__link:hover svg {
+    fill: #ed1c24;
+}
+
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 360px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#modalSocial .modal-box{
+    padding-bottom: 40px;
+}
+
+#modalSocial .modal-dialog .modal-header{
+    padding-bottom: 0;
+    padding-top: 0;
+    border: none;
+}
+
+#modalSocial .modal-dialog .modal-body{
+    padding: 0 15px 30px;
+}
+
+#modalSocial .modal-dialog .modal-body h4{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+
+#modalSocial .modal-dialog .modal-header .close{
+    width: 50px;
+}
+
+
+#modalSocial .soc-btns__link svg {
+    fill: #fff;
+}
+#modalSocial .soc-btns__link:hover svg {
+    fill: #fff;
+}
+#modalSocial .soc-btns__link_in {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border: none;
+}
+
+#modalSocial .soc-btns__link_in svg{
+    transform: translateY(-3px);
+}
+
+#modalSocial .soc-btns__link_fb {
+    background-color: #3b5999;
+    border-color: #3b5999;
+}
+#modalSocial .soc-btns__link_fb:hover {
+    background-color: #344e87;
+    border-color: #344e87;
+}
+#modalSocial .soc-btns__link_vk {
+    background-color: #4d77a1;
+    border-color: #4d77a1;
+}
+#modalSocial .soc-btns__link_vk:hover {
+    background-color: #456a90;
+    border-color: #456a90;
+}
+#modalSocial .soc-btns__link_ok {
+    background-color: #f0931d;
+    border-color: #f0931d;
+}
+#modalSocial .soc-btns__link_ok:hover {
+    background-color: #e4860f;
+    border-color: #e4860f;
+}
+#modalSocial .soc-btns__link_yt {
+    background-color: #dd2b22;
+    border-color: #dd2b22;
+}
+#modalSocial .soc-btns__link_yt:hover {
+    background-color: #c7271f;
+    border-color: #c7271f;
+}
+
