@@ -24,6 +24,13 @@
   </script>
   <!--  /pixel-->
 
+  <link rel="stylesheet" href="dquiz/dquiz.min.css"/>
+  <style>
+      .dquiz-is-locked .callbackkiller,
+      .dquiz-is-locked .ws-chat .ws-chat-btn-el-container {
+          z-index: -1 !important;
+      }
+  </style>
 </head>
 <body>
 <!--pixel-->
@@ -100,49 +107,42 @@
   <!-- CONTENT -->
   <section>
     <div class="main-section">
-      <div class="main-title">
-        <p>
-          <b>Автосервисное и гаражное оборудование</b>
-        </p>
-      </div>
-      <div class="main-description">
-        <p>
-          От официального дилера с доставкой по России
-        </p>
-        <!--                <p><u>Скачай каталог в WhatsApp:</u></p>-->
-      </div>
+      <div class="main-title"><p><b>Автосервисное и шиномонтажное оборудование</b></p></div>
+      <div class="main-description"><p>От официального дилера с доставкой по России</p></div>
       <div class="button-list">
-        <a href='https://wa.me/79130707688?text=Чтобы получить предложение на автосервисное оборудование, нажмите "отправить"'>
-					<span class="whatsapp-button"
-                onclick="yaCounter44176079.reachGoal('whatsappmob'); gtag('event', 'WhatsAppMob', {'event_category': 'zayavka', 'event_action': 'whatsapp'}); return true;">
-						Получить предложение в WhatsApp
-					</span>
-        </a>
+        <button class="scroll-button">
+          Подобрать оборудование
+        </button>
       </div>
       <div class="main-image">
         <img src="img/turbo_images/AutoService.jpg" alt="#">
       </div>
 
       <div class="before-form">
-        <div class="before-form-title">
-          <p>
-            ПОДБЕРЁМ КОМПЛЕКТ ОБОРУДОВАНИЯ
-            <br>
-            <span>ИЗ 1639 МОДЕЛЕЙ В НАЛИЧИИ</span>
-          </p>
+        <h2 class="before-form-title">Отправим готовое предложение с вилкой цен: выгодно, качественно, лучшее</h2>
+      </div>
 
-        </div>
+      <div class="container" style="padding-top: 30px; padding-bottom: 50px">
+        <?php include './dquiz/dquiz-turbo-page.php' ?>
+      </div>
+
+      <script src="dquiz/dquiz.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new dQuiz('.dquiz-1', {
+            yaMetrika: '44176079'
+          });
+        })
+      </script>
+      <div class="before-form">
         <div class="before-form-description">
-          Мы официальные дилеры, входящие в тройку лидеров по продажам автосервисного оборудования
-          <br>
           <p>
-            <b>Получи подробные характеристики, фотографии и цены на всё автосервисное оборудование</b>
+            <b>Проведем подробную консультацию по оборудованию и подберём самое оптимальное под вашу задачу.</b>
             <br>
-            <b>Просто оставь номер:</b>
+            <b>Просто оставьте номер:</b>
           </p>
         </div>
       </div>
-
       <div class="form-section">
         <form method="post" action="sender/send.php" id="form_24" class="sform">
           <label>Телефон<i style="color:red">*</i></label>
@@ -151,7 +151,7 @@
                  name="phone" required>
           <div class="submit-button">
             <button type="submit">
-              <span id="submitNew">Получить каталог</span>
+              <span id="submitNew">Получить консультацию</span>
             </button>
           </div>
         </form>

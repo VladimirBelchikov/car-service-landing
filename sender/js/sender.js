@@ -260,7 +260,7 @@ function getYaMetricaCounter() {
 
 function markWhatsAppMessage() {
     var buttons = document.querySelectorAll('.whatsapp-button');
-
+    if (!buttons) return false;
     buttons.forEach(function (button) {
         var link;
         if (button.parentElement.tagName === "A") {

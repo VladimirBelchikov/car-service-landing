@@ -115,6 +115,14 @@ section .button-list {
     text-align: center;
 }
 
+section .scroll-button {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba(42, 206, 40, 1);
+    height: inherit;
+    padding: 10px 20px;
+}
+
 section .button-list span {
     display: inline-block;
     color: #000000;
@@ -165,7 +173,7 @@ section .before-form {
 }
 
 section .before-form .before-form-title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 40px;
 }
 
@@ -374,7 +382,7 @@ footer .footer-middle .footer-middle-agreement-modal a {
     }
 
     section .before-form .before-form-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
