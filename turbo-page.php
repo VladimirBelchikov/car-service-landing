@@ -97,9 +97,6 @@
     <div class="header-phone">
       <a class="mgo-number header-phone-icon" href="tel:+78005505724">
       </a>
-      <div class="header-phone-number">
-        <a href="tel:+78005505724" class="mgo-number">8-800-550-57-24</a> 88007753106@mail.ru
-      </div>
     </div>
   </header>
   <!-- END HEADER -->
