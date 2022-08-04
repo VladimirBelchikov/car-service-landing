@@ -26,10 +26,10 @@
 
   <link rel="stylesheet" href="dquiz/dquiz.min.css"/>
   <style>
-      .dquiz-is-locked .callbackkiller,
-      .dquiz-is-locked .ws-chat .ws-chat-btn-el-container {
-          z-index: -1 !important;
-      }
+		.dquiz-is-locked .callbackkiller,
+		.dquiz-is-locked .ws-chat .ws-chat-btn-el-container {
+			z-index: -1 !important;
+		}
   </style>
 </head>
 <body>
@@ -131,6 +131,160 @@
           });
         })
       </script>
+
+      <h2 class="subtitle">
+        <span class="accent">Внимание!</span>
+        <br>
+        Компания Центр Технического Оборудования не продает дешевое и некачественное оборудование, приводящее
+        к негативным отзывам и судебным процессам. Мы предлагаем только проверенное оборудование
+        по цене заводов изготовителей и официальной гарантией до 36 месяцев.
+      </h2>
+      <div class="container equipment-container swiper">
+        <div class="swiper-wrapper">
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-1.jpg" alt="">
+              </div>
+              <p>Шиномонтажное балансировочное<br/>оборудование<br/>от 97 749 р.</p>
+            </a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-2.jpg" alt="">
+              </div>
+              <p>Гидравлическое<br/>оборудование<br/>от 180 000 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-3.jpg" alt="">
+              </div>
+              <p>Гаражное<br/>оборудование<br/>от 14 152 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-4.jpg" alt="">
+              </div>
+              <p>Диагностическое<br/>оборудование<br/>от 48 000 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-5.jpg" alt="">
+              </div>
+              <p>Для кузовного<br/>ремонта<br/>от 148 000 р.</p>
+            </a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-6.jpg" alt="">
+              </div>
+              <p>Покрасочные<br/>камеры<br/>от 1 500 000 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-7.jpg" alt="">
+              </div>
+              <p>Инструмент<br/>и мебель<br/>от 5 197 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-8.jpg" alt="">
+              </div>
+              <p>Стенды<br/>&quot;развал-схождения&quot;<br/>от 450 000 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-9.jpg" alt="">
+              </div>
+              <p>Компрессоры<br/>от 45 000 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-10.jpg" alt="">
+              </div>
+              <p>Грузовое<br/>оборудование<br/>от 420 000 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-11.jpg" alt="">
+              </div>
+              <p>Сварочное<br/>оборудование<br/>от 50 200 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-12.jpg" alt="">
+              </div>
+              <p>Моечное<br/>оборудование<br/>от 6 560 р.</p></a>
+          </div>
+          <div class='equipment-container__element swiper-slide'>
+            <a href="#openModal_2">
+              <div class="img-netflix img-netflix_1x1 img-netflix_contain">
+                <img src="img/equipment-13.jpg" alt="">
+              </div>
+              <p>Электростанции<br/>от 31 724 р.</p></a>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <section class="section-main reviews-container" id="rewmap">
+        <div class="container">
+          <h2 class="reviews-container__title">
+            Посмотрите, <span class="danger">что пишут о нас клиенты</span>, которым мы уже доставили оборудование
+          </h2>
+          <div class="swiper__wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-responsive lazy"
+                       src="img/reviews/rew-3.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive lazy"
+                       src="img/reviews/rew-2.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive lazy"
+                       src="img/reviews/rew-1.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive lazy"
+                       src="img/reviews/rew-4.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive lazy"
+                       src="img/reviews/rew-5.jpg"
+                       alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-responsive lazy"
+                       src="img/reviews/rew-6.jpg"
+                       alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
       <div class="before-form">
         <div class="before-form-description">
           <p>
@@ -192,17 +346,26 @@
 <!-- END FOOTER -->
 
 <!-- MODAL WINDOWS -->
-<div id="openModal_agreement" class="modalDialog">
-  <div>
-    <h2>Соглашение</h2>
-    <p>
-      Нажимая «Отправить», даю согласие ООО Центр технического оборудования,
-      ИНН 4205274440 на обработку введенной информации в целях, указанных в анкете,
-      в порядке, предусмотренном политикой конфиденциальности.
-      Анкета создана с использованием ресурсов Яндекса, в связи с чем я даю согласие ООО "ЯНДЕКС"
-      на обработку указанных в анкете данных на условиях и для целей, определенных в Политике конфиденциальности.
-    </p>
-    <a href="#close" title="Закрыть" class="close">Понятно</a>
+
+<div id="openModal_2" class="modalDialog">
+  <div class="modalDialog__container">
+    <div class="modal-box">
+      <a href="#close" title="Close" class="close"></a>
+      <h4 class="modalDialog__title">Оставь имя и телефон<br/>и получите выгодное предложение</h4>
+      <form method="post" action="/sender/send.php" class="sform modalDialog__form">
+        <input type="hidden" id="ya-city" value="">
+        <input type="hidden" name="subject" id="cNameId2" value="">
+        <input class="modalDialog__input input-text input-modal" type="text" name="name" placeholder="Ваше имя">
+        <input class="modalDialog__input input-text input-modal phone-mask" maxlength="18" type="text" name="phone"
+               placeholder="Ваш телефон" required>
+        <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
+        <div class="wrapper-button">
+          <input class="modalDialog__submit" type="submit" name="submit" value="Отправить">
+          <div class="modalDialog__compliance">Нажимая кнопку, вы даете согласие на обработку персональных данных</div>
+        </div>
+        <input type="hidden" name="typsh" value="Автосервисное">
+      </form>
+    </div>
   </div>
 </div>
 
@@ -234,8 +397,6 @@
 <script src="https://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
 <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU"
         type="text/javascript"></script>
-<script src="js/jquery.simslider.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="/sender/js/sender.js?rnd=<?= uniqid() ?>"></script>
 
 <script>
@@ -247,9 +408,7 @@
 </script>
 <script type="text/javascript">
   function viewdiv() {
-
     var el = document.getElementsByClassName("hideclass");
-    //ert(el[0].id);
     for (var i = 0; i < el.length; i++) {
       if (el[i].style.display == "none") {
         el[i].style.display = "block";
@@ -257,70 +416,11 @@
         el[i].style.display = "none";
       }
     }
-
   }
-
 </script>
 
 
 <script src="js/common.js"></script>
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function (f, b, e, v, n, t, s) {
-    if (f.fbq) return;
-    n = f.fbq = function () {
-      n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-    };
-    if (!f._fbq) f._fbq = n;
-    n.push = n;
-    n.loaded = !0;
-    n.version = '2.0';
-    n.queue = [];
-    t = b.createElement(e);
-    t.async = !0;
-    t.src = v;
-    s = b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t, s)
-  }(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '3566209050080251');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-               src="https://www.facebook.com/tr?id=3566209050080251&ev=PageView&noscript=1"
-  /></noscript>
-<!-- End Facebook Pixel Code -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148345717-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag('js', new Date());
-  gtag('set', {'user_id': 'USER_ID'}); // Задание идентификатора пользователя с помощью параметра user_id (текущий пользователь).
-  gtag('config', 'UA-148345717-1');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148719137-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag('js', new Date());
-  gtag('set', {'user_id': 'USER_ID'}); // Задание идентификатора пользователя с помощью параметра user_id (текущий пользователь).
-  gtag('config', 'UA-148719137-5');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -450,6 +550,9 @@
 </noscript>
 <!-- //Rating@Mail.ru counter -->
 
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper-turbo-page.js"></script>
+<script src="js/remodal.min.js"></script>
 
 </body>
 </html>

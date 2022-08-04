@@ -4,7 +4,7 @@ include('./utm.php');
 
 $uagent = $_SERVER['HTTP_USER_AGENT'];
 if (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i', $uagent) || preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i', substr($uagent, 0, 4))) {
-  $turbo_url = "https://автосервисное.оборудование5.рф/turbo-page.php";
+  $turbo_url = "https:///автосервисное.оборудование5.рф/turbo-page.php";
   $get_params = $_SERVER['QUERY_STRING'] ? '?' . $_SERVER['QUERY_STRING'] : '';
   header('location: ' . $turbo_url . $get_params);
 }
@@ -206,7 +206,6 @@ if (isset($_GET['utm_source'])) {
 <html lang="ru">
 <head>
   <meta name="yandex-verification" content="b9ca3579ec9b1487"/>
-  <meta name="facebook-domain-verification" content="7rt8lic8cbheryz5sq4xstl8wymkga"/>
   <meta charset="utf-8"/>
   <title>Центр Технического Оборудования <?php echo $brands_arr[$brand_id]["Title"]; ?></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -229,54 +228,33 @@ if (isset($_GET['utm_source'])) {
   <!-- Dquiz -->
   <link rel="stylesheet" href="dquiz/dquiz.min.css"/>
   <style>
-      .dquiz-is-locked .callbackkiller,
-      .dquiz-is-locked .ws-chat .ws-chat-btn-el-container {
-          z-index: -1 !important;
-      }
+		.dquiz-is-locked .callbackkiller,
+		.dquiz-is-locked .ws-chat .ws-chat-btn-el-container {
+			z-index: -1 !important;
+		}
   </style>
   <!-- Pixel -->
   <script type="text/javascript">
     !function () {
       var t = document.createElement("script");
-      t.type = "text/javascript", t.async = !0, t.src = 'https://vk.com/js/api/openapi.js?169', t.onload = function () {
-        VK.Retargeting.Init("VK-RTRG-1430706-6UU2B"), VK.Retargeting.Hit()
-      }, document.head.appendChild(t)
+      t.type = "text/javascript";
+      t.async = !0;
+      t.src = 'https://vk.com/js/api/openapi.js?169';
+      t.onload = function () {
+        VK.Retargeting.Init("VK-RTRG-1430706-6UU2B");
+        VK.Retargeting.Hit();
+      };
+      document.head.appendChild(t)
     }();
   </script>
   <!-- Pixel -->
 
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '3566209050080251');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-                 src="https://www.facebook.com/tr?id=3566209050080251&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- End Facebook Pixel Code -->
-  <? include 'sender/includes/admitad.php' ?>
-
   <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
-  <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=b69e372ba309bc8faf81bca86a8241e9"
-          charset="UTF-8" async></script>
+  <script type="text/javascript"
+          src="https://cdn.envybox.io/widget/cbk.js?wcb_code=b69e372ba309bc8faf81bca86a8241e9"
+          charset="UTF-8"
+          async>
+  </script>
 </head>
 <body>
 <!--pixel-->
@@ -336,111 +314,57 @@ if (isset($_GET['utm_source'])) {
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
-<header style="display: block;" class="add-tender-btn">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-lg-5 col-lg-push-7">
-        <div class="row">
-          <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 header-city-wrap">
-            <div class="header-city">
-              <p class="city-p">Москва</p>
-              <a href="#openMenu" class="openMenu">город доставки</a>
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-6 col-sm-6 col-xs-6 header-phone-number">
-            <p class="mgo-number-15766 mgo-number">8 (800) 550-5724</p>
-            <a href="#openModal"> Звони! Поможем выбрать </a>
-            <p class="header-mail">88007753106@mail.ru</p>
-          </div>
-        </div>
+<header class="header">
+  <div class="container header__container">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 89" style="height: 100%">
+        <style>
+					.st1 {
+						fill: #3a3b3b
+					}
+        </style>
+        <path fill="#de343d" d="M34 89L0 69V30l34-20v15L13 37.2V62l21 12.3 21-12.5V37l13-7v39z"/>
+        <path class="st1"
+              d="M40 0v40l34-20.3zM25 44v7h-4v-7h-4v11h10v2h2v-3h-1v-6h4v7h4v-7h4v7h11V44H25zm22 7h-3v-3h3v3z"/>
+      </svg>
+      <span class="header-logo-text">Центр <br> Технического <br> Оборудования</span>
+    </div>
+    <div class="header__button-container">
+      <a href="#openModal_tender" class="tender-btn">Пригласить на тендер</a>
+    </div>
+    <div class="header-city-wrap">
+      <div class="header-city">
+        <p class="city-p">Москва</p>
+        <a href="#openMenu" class="openMenu">город доставки</a>
       </div>
-      <div class="col-md-12 col-lg-7 col-lg-pull-5 clearfix">
-        <div class="logo">
-          <img class="logo-img" src="img/logo.png" width="81" height="73" alt="Логотип">
-        </div>
-        <div class="header-logo-text">
-          <h1>Продажа автосервисного оборудования с доставкой по России</h1>
-          <span>Центр Технического Оборудования</span>
-        </div>
-        <a href="#openModal_tender" class="tender-btn">Пригласить на тендер</a>
-      </div>
-
+    </div>
+    <div class="header-phone-number">
+      <p class="mgo-number-15766">8 (800) 550-5724</p>
+      <a href="#openModal"> Звони! Поможем выбрать </a>
     </div>
   </div>
 </header>
 
 <div class="wrap-top-menu">
-
   <div class="container no-padding">
     <div class="row">
       <div class="col-md-12 section-title delivery-title">
-        <h2>поставляем только <span>сертифицированное</span><br><span>оборудование</span> со сроком эксплуатации до 5
-          лет<br/><span>и гарантией от 12 до 36 месяцев</span></h2>
+        <h2>
+          Доставим <span>автосервисное и шиномонтажное</span>
+          <br>
+          <span>оборудование</span> в ваш город по лучшей цене
+        </h2>
       </div>
     </div>
     <div class="container" style="padding-top: 30px; padding-bottom: 50px">
       <?php include './dquiz/dquiz.php' ?>
     </div>
-
-    <!--<div class="row catalog-position">
-      <div class="col-md-3 col-sm-3 col-xs-3 cat-pos cat-pos-1">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Шиномонтажное&nbsp;оборудование")><img src="img/cat_pos_1.png" width="200" alt="">
-        <p>Шиномонтажное балансировочное<br/>оборудование<br/>от 97 749 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-2">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Гидравлическое&nbsp;оборудование")><img src="img/cat_pos_2.png" width="264" alt="">
-        <p>Гидравлическое<br/>оборудование<br/>от 180 000 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-3">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Гаражное&nbsp;оборудование")><img src="img/cat_pos_3.png" width="206" alt="">
-        <p>Гаражное<br/>оборудование<br/>от 14 152 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-4">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Диагностическое&nbsp;оборудование")><img src="img/cat_pos_4.png" width="236" alt="">
-        <p>Диагностическое<br/>оборудование<br/>от 48 000 р.</p></a>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-3 cat-pos cat-pos-5">
-        <a href="#openModal_2" onClick=CatNameChanger2("для&nbsp;кузовного&nbsp;ремонта")><img src="img/cat_pos_5.png" width="280" alt="">
-        <p>Для кузовного<br/>ремонта<br/>от 148 000 р.</p></a>
-      </div>
-    </div>
-    <div class="row cat-pos-string catalog-position">
-      <div class="col-md-3 col-sm-3 col-xs-3 cat-pos cat-pos-6">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Покрасочные&nbsp;камеры")><img src="img/cat_pos_6.png" width="354" alt="">
-        <p>Покрасочные<br/>камеры<br/>от 1 500 000 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-7">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Инструмент&nbsp;и&nbsp;мебель")><img src="img/cat_pos_7.png" width="246" alt="">
-        <p>Инструмент<br/>и мебель<br/>от 5 197 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-8">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Стенды&nbsp;развал-схождения")><img src="img/cat_pos_8.png" width="236" alt="">
-        <p>Стенды<br/>&quot;развал-схождения&quot;<br/>от 450 000 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-9">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Компрессоры")><img src="img/cat_pos_9.png" width="272" alt="">
-        <p>Компрессоры<br/>от 45 000 р.</p></a>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-3 cat-pos cat-pos-10">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Грузовое&nbsp;оборудование")><img src="img/cat_pos_10.png" width="256" alt="">
-        <p>Грузовое<br/>оборудование<br/>от 420 000 р.</p></a>
-      </div>
-    </div>
-    <div class="row cat-pos-string cat-pos-string-2">
-      <div class="col-md-5 col-sm-5 col-xs-5 cat-pos cat-pos-11">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Сварочное&nbsp;оборудование")><img src="img/cat_pos_11.png" width="186" alt="">
-        <p>Сварочное<br/>оборудование<br/>от 50 200 р.</p></a>
-      </div>
-      <div class="col-md-2 col-sm-2 col-xs-2 cat-pos cat-pos-12">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Моечное&nbsp;оборудование")><img src="img/cat_pos_12.png" width="248" alt="">
-        <p>Моечное<br/>оборудование<br/>от 6 560 р.</p></a>
-      </div>
-      <div class="col-md-5 col-sm-5 col-xs-5 cat-pos cat-pos-13">
-        <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Электростанции")><img src="img/cat_pos_13.png" width="278" alt=""><p>Электростанции<br/>от 31 724 р.</p></a>
-      </div>
-    </div>-->
-
+    <h2 class="subtitle">
+      <span class="accent">Внимание!</span> <br> Компания Центр Технического Оборудования не продает дешевое и
+      некачественное
+      оборудование, приводящее к негативным отзывам и судебным процессам. Мы предлагаем только проверенное оборудование
+      по цене заводов изготовителей и официальной гарантией до 36 месяцев.
+    </h2>
     <div class="container equipment-container">
       <div class='equipment-container__element'>
         <a href="#openModal_2" onClick=CatNameChanger2("на&nbsp;Шиномонтажное&nbsp;оборудование")>
@@ -536,541 +460,382 @@ if (isset($_GET['utm_source'])) {
           <p>Электростанции<br/>от 31 724 р.</p></a>
       </div>
     </div>
-
   </div>
+</div>
 
-  <div id="openModal3" class="modalDialog2">
-    <div>
-      <a href="#close" title="Close" class="close"><span></span></a>
-      <div class="modal-box">
-        <div class="prokrutka">
-          <div class="otstup">
-            <h1>Согласие пользователя сайта на обработку персональных данных</h1>
-            <br>
-            <h2>ФЗ «О персональных данных» от 27.07.2006 N 152-ФЗ регламентирует, что согласие на обработку персональных
-              данных может быть дано гражданином или его представителем в любой позволяющей подтвердить факт его
-              получения форме, если иное не установлено федеральным законом. В случае, если наличие письменного согласия
-              в силу закона не обязательно, гражданин может выразить свое согласие на обработку персональных данных
-              любым способом, в частности проставлением отметки в электронном виде.</h2>
-            <h2>Действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, я
-              (далее – Пользователь) даю свое согласие ООО «Центр технического оборудования» (далее –
-              Компания) (ИНН 4205274440), которое расположено по адресу 650000, г. Кемерово, пр.
-              Притомский, д. 7/1, на обработку своих персональных данных, включая страницы, расположенные
-              на его поддоменах (далее – Сайт) в соответствии со следующим перечнем:</h2></div>
-          <h3>• фамилия, имя, отчество физического лица и/или индивидуального предпринимателя, занимаемая
-            должность, адрес электронной почты,<br>контактный телефон, адрес местонахождения;
-            <br>• источник
-            захода на Сайт и информация поискового или рекламного запроса;
-            <br>• данные о пользовательском устройстве (среди которых разрешение, версия и другие атрибуты,
-            характеризующие пользовательское устройство);
-            <br>• пользовательские клики, просмотры страниц, заполнения полей, показы и просмотры баннеров и
-            видео;
-            <br>• данные, характеризующие аудиторные сегменты;
-            <br>• параметры сессии;
-            <br>• данные о времени посещения;
-            <br>• информация, хранимая в cookie,
-            <br>• IP адрес;
-            <br>• другие данные, предоставляемые Пользователем по собственной инициативе.</h3></p>
-          <div class="otstup">
-            <h2>Для целей повышения осведомленности пользователей Сайта о товарах/работах/услугах
-              Компании, предоставления релевантной рекламной информации, оптимизации рекламы, оказания
-              информационной поддержки, консультирования, проведения маркетинговых кампаний (в т.ч.
-              email-рассылок и SMS- уведомлений о новостях и акциях и т.п.), отправки уведомлений о статусах
-              обращений, заявок, заказов, а также в иных случаях использования Сайта пользователями.
-              Персональные данные не являются общедоступными. Основанием для обработки персональных
-              данных является: ст. 24 Конституции Российской Федерации; ст.6 Федерального закона №152-ФЗ
-              «О персональных данных»; Устав ООО «Центр технического оборудования»; настоящее согласие
-              на обработку персональных данных. В ходе обработки с персональными данными будут
-              совершены следующие действия: сбор; запись; систематизация; накопление; хранение; уточнение
-              (обновление, изменение); извлечение; использование; передача (распространение, предоставление,
-              доступ); блокирование; удаление; уничтожение. Настоящее согласие действует до дня его отзыва
-              Пользователем в письменной форме. Данное согласие может быть отозвано путем направления
-              письменного отзыва по месту нахождения Компании по почте или путем направления
-              электронного письма на адрес электронной почты 88007753106@mail.ru. В указанном случае
-              Компания прекращает обработку и уничтожает персональные данные Пользователя в срок, не
-              превышающий 30 (тридцати) календарных дней с даты получения соответствующего отзыва.
-              <br></h2>
-            <h5><br>Утверждено приказом ООО «Центр технического оборудования»
-              №2017/06-1 от 15.06.2017.</h5>
-            <br>
-            <br>
-            <br>
+<section class="sets passenger">
+  <h2 class="subtitle sets__title">ГОТОВЫЕ КОМПЛЕКТЫ С ВЫГОДОЙ ДО 10 ПРОЦЕНТОВ</h2>
+  <h2 class="subtitle sets__subtitle">Комплекты для легкового шиномонтажа</h2>
+  <div class="swiper sets__wrapper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/econom.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_gray">Эконом</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>NORDBERG 4638E</span></li>
+              <li><span>Балансировочный станок</span><span>NORDBERG ECO 4523C</span></li>
+              <li><span>Компрессор воздушный</span><span>NORDBERG ECO NCE100/400</span></li>
+              <li><span>Домкрат подкатной</span><span>NORDBERG N3203</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>NORDBERG ECO NP14085K</span></li>
+            </ul>
+            <p class="sets__price">199 856 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
 
-            <input type="hidden" name="typsh" value="Автосервисное">
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/specialist.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_blue">Специалист</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1810E</span></li>
+              <li><span>Балансировочный станок</span><span>TROMMELBERG CB1930E</span></li>
+              <li><span>Компрессор воздушный</span><span>HUBERTH RP103100</span></li>
+              <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0330</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
+            </ul>
+            <p class="sets__price">224 665 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/semi-auto.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_red">Профи-полуавтомат</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1860</span></li>
+              <li><span>Балансировочный станок</span><span>TROMMELBERG CB1960B</span></li>
+              <li><span>Компрессор воздушный</span><span>HUBERTH RP306250</span></li>
+              <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0375</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
+            </ul>
+            <p class="sets__price">356 780 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/prof.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_red">Профи-автомат</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1885</span></li>
+              <li><span>Балансировочный станок</span><span>TROMMELBERG CB1990B</span></li>
+              <li><span>Компрессор воздушный</span><span>HUBERTH RP309250</span></li>
+              <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0335</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
+            </ul>
+            <p class="sets__price">577 253 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</section>
+
+<section class="sets cargo">
+  <h2 class="subtitle sets__subtitle">Комплекты для грузового шиномонтажа</h2>
+  <div class="swiper sets__wrapper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/econom.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_gray">Эконом</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>NORDBERG 46TRKE</span></li>
+              <li><span>Балансировочный станок</span><span>NORDBERG 45TRK</span></li>
+              <li><span>Компрессор поршневой</span><span>REMEZA СБ4/Ф-500.ав585/16</span></li>
+              <li><span>Домкрат подкатной</span><span>NORDBERG N3322L</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+            </ul>
+            <p class="sets__price">762 682 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/specialist.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_blue">Специалист</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>SIVIK ГШС-515А</span></li>
+              <li><span>Балансировочный станок</span><span>SIVIK TRUCKER STANDARD</span></li>
+              <li><span>Компрессор поршневой</span><span>REMEZA СБ4/Ф-500.АВ858/16</span></li>
+              <li><span>Домкрат</span><span>TROMMELBERG SD101902</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+            </ul>
+            <p class="sets__price">887 329 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="sets__item-container">
+          <div class="sets__item-img-container">
+            <img src="./img/sets/semi-auto.png" alt="" class="sets__item-img">
+          </div>
+          <div class="sets__text-block">
+            <h3 class="sets__item-title bg_red">Профи</h3>
+            <ul class="sets__item-list">
+              <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1580</span></li>
+              <li><span>Балансировочный станок</span><span>TROMMELBERG CB1960B</span></li>
+              <li><span>Компрессор воздушный</span><span>HUBERTH RP306250</span></li>
+              <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0802</span></li>
+              <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+            </ul>
+            <p class="sets__price">760 701 руб.</p>
+          </div>
+          <a class="sets__button" href="#openModal_call">Купить комплект</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</section>
+
+<div class="wrap-manager-section">
+  <div class="container">
+    <div class="row">
+      <div class="section-title section-title-manager">
+        <h2>
+          получи консультацию у <span>персонального менеджера</span>
+          <br>
+          <span>через 10 минут</span> после оставления заявки
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="manager-section__swiper-container">
+        <div class="swiper manager-section__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/managers/danil-skurdanov.jpg" alt="">
+              <p>Данил Скурданов</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/managers/anna-marasanova.jpg" alt="">
+              <p>Анна Марасанова</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/managers/ksenia-samoilova.jpg" alt="">
+              <p>Ксения Самойлова</p>
+            </div>
+          </div>
+          <div class="manager-section__manager-name"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="wrap-form-call manager-section__callback-form">
+          <div>
+            <p>позвони<br/><i class="fa fa-phone fa-1x"></i><span class="mgo-number-15791"> 8 800 550 5724</span></p>
+            <h4>или оставь заявку<br/><span>на звонок</span></h4>
+            <form method="post" action="/sender/send.php" id="form_9" class="sform"
+                  onsubmit="yaCounter38510265.reachGoal('cel10'); return true;">
+              <input type="hidden" name="subject" value="Заявка на звонок">
+              <div class="wrap-input-name-call">
+                <input class="input-text input-name input-call" type="text" name="name" placeholder="Имя">
+              </div>
+              <div class="wrap-input-telephone-call">
+                <input class="input-text input-phone input-call phone-mask" id="inputf9" maxlength="18" type="text"
+                       name="phone" placeholder="Телефон*" required>
+              </div>
+              <div class="alert_on alert_on_bg_white" id="phone_bottom_9"></div>
+              <div class="wrap-form-btn-call">
+                <input class="form-button form-1-btn btn-color-2 btn-call" type="submit" name="call"
+                       value="перезвонить">
+              </div>
+              <div class="call-form-small-text" style="bottom:13%;">за 5 минут</div>
+              <div class="compliance" style="font-size:9px; font-weight:300;">
+                <br>
+                <a href="#openModal3" target="_self" style="color:#D3D3D3; text-decoration: underline;">
+                  Нажимая кнопку, вы даете согласие на обработку персональных данных</a>
+              </div>
+              <input type="hidden" name="typsh" value="Покрасочное">
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-  <div id="openModal4" class="modalDialog2">
-    <div>
-      <a href="#close" title="Close" class="close"><span></span></a>
-      <div class="modal-box">
-        <div class="prokrutka">
-          <div class="otstup">
-            <h1>ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-            <h2>Дата размещения на Сайте «30» июня 2017 года.
-              Настоящая Политика обработки персональных данных (далее – Политика) определяет общие
-              принципы и порядок обработки персональных данных Пользователей онлайн-магазина и меры по
-              обеспечению их безопасности в Центр технического оборудования.</h2>
-            <h1>ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h1>
-            <h2>Стороны используют следующие термины в указанном ниже значении:</h2></div>
-          <h3>a) Данные – иные данные о Пользователе (не входящие в понятие персональных данных).
-            <br>b) Законодательство – действующее законодательство Российской Федерации.
-            Оператор – Центр технического оборудования, самостоятельно или совместно с другими лицами
-            организующее и (или) осуществляющее обработку персональных данных, а также определяющее
-            цели обработки персональных данных, состав персональных данных, подлежащих обработке,
-            действия (операции), совершаемые с персональными данными.
-            <br>c) Персональные данные – любая информация, относящаяся к прямо или косвенно определённому
-            или определяемому физическому лицу (Пользователю).
-            Пользователь – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт
-            интернет-магазина.
-            <br>d) Предоставление персональных данных – действия, направленные на раскрытие Персональных
-            данных определённому лицу или определённому кругу лиц.
-            <br>e) Сайт – сайт, расположенный в сети Интернет, где пользователь оставляет персональные данные.
-            <br>f) Субъект персональных данных – Пользователь (физическое лицо), к которому относятся
-            Персональные данные.
-            <br>g) Транспортные компании – третьи лица, оказывающие курьерские услуги.</h3>
-
-          <h2>Иные термины, используемые в Политике трактуются в соответствии с Законодательством РФ.
-            <h2>
-              <h1>1. ОБЩИЕ ПОЛОЖЕНИЯ</h1>
-              <h3>1.1. Настоящая Политика в отношении обработки персональных данных разработана в
-                соответствии с положениями Федерального закона от 27.07.2006 №152-ФЗ «О персональных
-                данных» (с изменениями и дополнениями), другими законодательными и нормативными
-                правовыми актами и определяет порядок работы с Персональными данными Пользователей и
-                (или) передаваемых Пользователями и требования к обеспечению их безопасности.
-                <br>1.2. Мероприятия по обеспечению безопасности персональных данных являются составной частью
-                деятельности Оператора.</h3>
-              <h1>2. ПРИНЦИПЫ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-              <h2>2.1. Обработка Персональных данных Оператором осуществляется в соответствии со следующими
-                принципами:</h2>
-              <h3>2.1.1. Законность и справедливая основа обработки Персональных данных. Оператор принимает
-                все необходимые меры по выполнению требований Законодательства, не обрабатывает
-                Персональные данные в случаях, когда это не допускается Законодательством, не использует
-                Персональные данные во вред Пользователю.
-                <br>2.1.2. Обработка только тех Персональных данных, которые отвечают заранее объявленным целям
-                их обработки. Соответствие содержания и объёма обрабатываемых Персональных данных
-                заявленным целям обработки. Недопущение обработки Персональных данных, не совместимых с
-                целями сбора Персональных данных, а также избыточных по отношению к заявленным целям их
-                обработки.
-                Оператор обрабатывает Персональные данные исключительно в целях исполнения договорных
-                обязательств перед Пользователем.
-                <br>2.1.3. Обеспечение точности, достаточности и актуальности Персональных данных по отношению
-                к целям обработки Персональных данных. Оператор принимает все разумные меры по поддержке
-                актуальности обрабатываемых Персональных данных, включая, но не ограничиваясь реализацией
-                права каждого Субъекта получать для ознакомления свои Персональные данные и требовать от
-                Оператора их уточнения, блокирования или уничтожения в случае, если Персональные данные
-                являются неполными, устаревшими, неточными, незаконно полученными или не являются
-                необходимыми для заявленных выше целей обработки.
-                <br>2.1.4. Хранение Персональных данных в форме, позволяющей определить Пользователя
-                Персональных данных, не дольше, чем этого требуют цели обработки Персональных данных, если
-                срок хранения Персональных данных не установлен федеральным законодательством, договором,
-                стороной которого или выгодоприобретателем по которому является Пользователь Персональных
-                данных.
-                <br>2.1.5. Недопустимость объединения созданных для несовместимых между собой целей баз данных
-                Информационных систем Персональных данных.</h3>
-              <h1>3. УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-              <h2>3.1. Обработка Персональных данных Оператором допускается в следующих случаях:</h2>
-              <h3>3.1.1. При наличии согласия Пользователя на обработку его Персональных данных. Согласие
-                дается путем акцепта Публичной оферты, размещенной на Сайте или путем оформления Заказа,
-                способами, указанными на Сайте.
-                <br>3.1.2. При передаче Персональных данных Субъекта персональных данных Пользователем при
-                осуществлении заказа на Сайте. Пользователь гарантирует, что предварительно получил от
-                Субъекта персональных данных согласие на передачу данных Оператору.
-                <br>3.1.3. Персональные данные подлежат опубликованию или обязательному раскрытию в
-                соответствии с Законодательством.</h3>
-              <h2>3.2. Оператор не раскрывает третьим лицам и не распространяет Персональные данные без
-                согласия Пользователя, если иное не предусмотрено Законодательством. <br>3.3. Оператор не
-                обрабатывает Персональные данные, относящиеся к специальным категориям и касающиеся
-                расовой и национальной принадлежности, политических взгляд
-                ов, религиозных или философских убеждений, состояния здоровья, интимной жизни Субъекта
-                персональных данных, о членстве Субъекта персональных данных в общественных объединениях,
-                за исключением случаев, прямо предусмотренных Законодательством.
-                <br>3.4. Оператор не осуществляет Трансграничную передачу Персональных данных Пользователей.</h2>
-              <h1>4. СБОР И ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ И ИНЫХ ДАННЫХ</h1>
-              <h2>4.1. Оператор собирает и хранит только те Персональные данные, которые необходимы для
-                предоставления услуг Пользователю для осуществления продажи товаров посредством Сайта. При
-                этом сбор Персональных данных может осуществляться как посредством Сайта, так и в офисе
-                Оператора.
-                <br>4.2. Оператор обрабатывает Персональные данные в следующих целях:</h2>
-              <h3>4.2.1. осуществления деятельности, предусмотренной? Уставом Общества, действующим
-                законодательством РФ;
-                <br>4.2.2. выполнения обязательств Оператора перед Пользователем по продаже товаров, в том числе
-                обработку платежей, доставку товаров.
-                <br>4.2.3. для связи с Пользователями в случае необходимости, в том числе для направления
-                уведомлении?, информации и запросов, связанных с оказанием услуг, а также обработки
-                заявлении?, запросов и заявок Пользователей;
-                <br>4.2.4. для улучшение качества услуг, оказываемых Оператором;
-                <br>4.2.5. для продвижения услуг на рынке путем осуществления прямых контактов с Пользователями;
-                <br>4.2.6. для проведения статистических и иных исследовании? на основе обезличенных
-                персональных данных.</h3>
-              <h2>4.3.В целях, указанных в п. 4.2. Оператор обрабатывает следующие персональные:</h2>
-              <h3>Фамилия, имя и отчество;
-                <br>Адрес электронной почты;
-                <br>Телефон;
-                <br>Данные банковской карты, с которой осуществляется оплата (наименование держателя банковской
-                <br>карты, номер карты, CVV код);
-                <br>IP адрес Пользователя;
-                <br>Тип браузера Пользователя;
-                <br>Адрес доставки товаров.</h3>
-              <h2>4.4. В отношении Персональных данных и иных Данных Пользователя сохраняется их
-                конфиденциальность, кроме случаев, когда указанные данные являются общедоступными.
-                <br>4.5. Оператор имеет право сохранять архивную копию Персональных данных и иных Данных, в
-                том числе после удаления аккаунта Пользователя.
-                <br>4.6. Оператор имеет право передавать Персональные данные и иные Данные Пользователя без
-                согласия Пользователя следующим лицам:</h2>
-              <h3>4.6.1. Государственным органам, в том числе органам дознания и следствия, и органам местного
-                самоуправления по их мотивированному запросу.
-                <br>4.6.2. Партнёрам Оператора c целью выполнения договорных обязательств перед Пользователем.
-                <br>4.6.3. В иных случаях, прямо предусмотренных действующим законодательством РФ.</h3>
-              <h2>4.7. Оператор имеет право передавать Персональные данные и иные Данные третьим лицам, не
-                указанным в п. 4.6 настоящей Политики, в следующих случаях:</h2>
-              <h3>4.7.1. Пользователь выразил свое согласие на такие действия.
-                <br>4.7.2. Передача необходима в рамках использования Пользователем Сайта или продажи товаров
-                Пользователю (в том числе в целях доставки товаров);
-                <br>4.7.3. Передача происходит в рамках продажи или иной передачи бизнеса (полностью или в
-                части), при этом к приобретателю переходят все обязательства по соблюдению условий настоящей
-                Политики.</h3>
-              <h2>4.8. Оператор осуществляет автоматизированную и неавтоматизированную обработки
-                Персональных данных и иных Данных.
-                <br>4.9. Доступ к Информационным системам, содержащим Персональные данные, обеспечивается
-                системой паролей. Пароли устанавливаются уполномоченными сотрудниками Оператора и
-                индивидуально сообщаются работникам Оператора, имеющим доступ к Персональным
-                данным/Данным.
-                <br>4.10. Оператор передает обработанную информацию транспортным (курьерским) компаниям на
-                основании согласия Пользователя (ст. 9 ФЗ «О персональных данных»).
-                <br>4.11. Оператор не несет ответственности за ненадлежащую обработку персональных данных
-                Пользователя, осуществляемую Транспортными компаниями.
-                <br>4.12. При получении Оператором персональных данных запроса, содержащего отзыв субъекта
-                персональных данных согласия на обработку персональных данных, то в течение 30 (тридцати)
-                календарных дней с момента его получения обязан удалить персональные данные.</h2>
-              <h1>5. ИЗМЕНЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-              <h2>5.1. Пользователь может в любой момент изменить (обновить, дополнить) Персональные данные
-                посредством путём направления письменного заявления Оператору.
-                5.2. Пользователь в любой момент имеет право удалить Персональные данные/Данные.</h2>
-              <h1>6. КОНФИДЕНЦИАЛЬНОСТЬ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-              <h2>6.1. Оператор обеспечивает конфиденциальность обрабатываемых им Персональных
-                данных/Данных в порядке, предусмотренном Законодательством. Обеспечение
-                конфиденциальности не требуется в отношении:</h2>
-              <h3>6.1.1. Персональных данных после их обезличивания.
-                <br>6.1.2. Персональных данных, доступ неограниченного круга лиц к которым предоставлен
-                Пользователем либо по его просьбе (далее – Персональные данные, сделанные общедоступными
-                Пользователем).
-                <br>6.1.3. Персональных данных, подлежащих опубликованию или обязательному раскрытию в
-                соответствии с Законодательством.
-                <br>6.1.4. Не является нарушением конфиденциальности Персональных данных предоставление
-                Оператором информации транспортным (курьерским) компаниям и иным третьим лицам,
-                действующим на основании договора с Оператором для исполнения обязательств перед
-                Пользователем.</h3>
-              <h1>7. СОГЛАСИЕ ПОЛЬЗОВАТЕЛЯ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-              <h2>7.1. Пользователь принимает решение о предоставлении своих Персональных данных Оператору и
-                даёт согласие на их обработку свободно, своей волей и в своём интересе. Согласие на обработку
-                Персональных данных должно быть конкретным, информированным и сознательным и
-                предоставляется Пользователем в момент его Регистрации на Сайте Оператора, а также в любой
-                позволяющей подтвердить факт его получения форме, если иное не установлено
-                Законодательством.
-                <br>7.2. Персональные данные лиц, вступивших в договорные обязательства с Оператором,
-                содержащиеся в единых государственных реестрах юридических лиц и индивидуальных
-                предпринимателей, являются открытыми и общедоступными, за исключением сведений о номере,
-                дате выдачи и органе, выдавшем документ, удостоверяющий личность физического лица. Охраны
-                их конфиденциальности и согласия Пользователей на обработку не требуется.
-                <br>7.3. В случае поступления запросов из организаций, не обладающих соответствующими
-                полномочиями, Оператор обязан получить предварительное согласие Пользователя на
-                предоставление его Персональных данных и предупредить лиц, получающих Персональные
-                данные, о том, что эти данные могут быть использованы лишь в целях, для которых они
-                сообщены, а также требовать от этих лиц подтверждения того, что это правило будет (было)
-                соблюдено.</h2>
-              <h1>8. ПРАВА СУБЪЕКТОВ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
-              <h2>8.1. Пользователь имеет право на получение информации, касающейся обработки его
-                Персональных данных/Данных. Пользователь вправе требовать от Оператора уточнения его
-                Персональных данных, их блокирования или уничтожения в случае, если Персональные данные
-                являются неполными, устаревшими, неточными, незаконно полученными или не являются
-                необходимыми для заявленной цели обработки, а также принимать предусмотренные законом
-                меры по защите своих прав.
-                <br>8.2. Если Пользователь считает, что Оператор осуществляет обработку его Персональных данных
-                с нарушением требований Законодательства или иным образом нарушает его права и свободы,
-                Пользователь вправе обжаловать действия или бездействие Оператора в уполномоченном органе
-                по защите прав субъектов Персональных данных или в судебном порядке.
-                <br>8.3. Пользователь имеет право на защиту своих прав и законных интересов, в том числе на
-                возмещение убытков и (или) компенсацию морального вреда в судебном порядке.</h2>
-              <h1>9. ПЕРСОНАЛЬНЫЕ ДАННЫЕ ТРЕТЬИХ ЛИЦ, ИСПОЛЬЗУЕМЫЕ ПОЛЬЗОВАТЕЛЯМИ</h1>
-              <h2>9.1. Используя Сайт, Пользователь имеет право заносить данные третьих лиц для заказа товаров.
-                <br>9.2. Пользователь обязуется получить предварительное согласие субъекта Персональных данных
-                на их использование посредством Сайта. Пользователь самостоятельно несет ответственность за
-                отсутствие такого согласия.
-                <br>9.3. Оператор обязуется предпринять необходимые меры для обеспечения сохранности
-                Персональных данных третьих лиц, занесённых Пользователем.</h2>
-              <h1>10. ИНЫЕ ПОЛОЖЕНИЯ</h1>
-              <h2>10.1. К настоящей Политике и отношениям между Пользователем и Оператором, возникающим в
-                связи с применением Политики, подлежит к применению право Российской Федерации.
-                <br>10.2. Все возможные споры подлежат разрешению в соответствии с Законодательством по месту
-                регистрации Оператора.
-                Перед обращением в суд Пользователь должен соблюсти обязательный досудебный порядок и
-                направить Оператору соответствующую претензию в письменном виде. Срок ответа на претензию
-                составляет 30 (тридцать) рабочих дней.
-                <br>10.3. Если по тем или иным причинам одно или несколько положений Политики будут признаны
-                недействительными или не имеющими юридической силы, это не оказывает влияния на
-                действительность или применимость остальных положений Политики конфиденциальности.
-                <br>10.4. Оператор имеет право в любой момент изменять настоящую Политику (полностью или в
-                части) в одностороннем порядке без предварительного согласования с Пользователем. Все
-                изменения вступают в силу на следующий день после размещения на Сайте.
-                <br>10.5. Пользователь обязуется самостоятельно следить за изменениями Политики
-                конфиденциальности путем ознакомления с актуальной редакцией.</h2>
-              <br>
-              <br>
-              <br>
-
-              <input type="hidden" name="typsh" value="Автосервисное">
-              </form>
-
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
-<div id="openModal_2" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и получи каталог <span id="catalogName2"></span></h4>
-      <form method="post" action="/sender/send.php" id="form_14" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel1'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject" id="cNameId2" value="">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf14" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Скачать каталог">
-          <div class="compliance" style="margin-top:-5%;font-size:9px;"><a href="#openModal3" target="_self"
-                                                                           style="color:#D3D3D3;">Нажимая кнопку, вы
-              даете согласие на обработку персональных данных</a></div>
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
-<div id="openModal" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и получи каталог <span id="catalogName2"></span></h4>
-      <form method="post" action="/sender/send.php" id="form_14" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel2'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject" id="cNameId2" value="">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf14" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Скачать каталог">
-          <div class="compliance" style="margin-top:-5%;font-size:9px;"><a href="#openModal3" target="_self"
-                                                                           style="color:#D3D3D3;">Нажимая кнопку, вы
-              даете согласие на обработку персональных данных</a></div>
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
-
-<!--Блок для комплектов-->
-<div class="container">
+<div class="container" id="reviews">
   <div class="row">
-    <div class="col-md-12 section-title section-title-set">
-      <h2>получи <span>готовый комплект</span> шиномонтажного<br/>оборудования <span>дешевле на 20%</span> через 2-14
-        дней<br/>за счёт готового предложения</h2>
+    <div class="col-md-12 section-title section-title-map">
+      <h2>задайте вопросы нашим клиентам<br/><span>в своём городе</span> о скорости поставки<br/>и качестве оборудования
+      </h2>
     </div>
   </div>
-  <div class="row" id="ekonom-complect">
-    <div class="col-md-5 col-sm-12">
-      <div class="position4">
-        <div class="set-position"><img src="img/set_image_11.png" class="set-item-img" width="650" alt=""></div>
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-12 map-box-1-wp">
+      <div class="map-box map-box-1">
+        <p><span>1</span>Выберите свой город</p>
       </div>
     </div>
-    <div class="col-md-7 col-sm-12">
-      <div class="set-text">
-        <h4><span>комплект &laquo;Профи&raquo;</span></h4>
-        <p><span>Шиномонтажный станок TROMMELBERG 1580</span><br/></p>
-        <p align="justify">
-          (АВТОМАТ, до 26", максимальная грузоподъемность подъемной консоли 1000 кг, максимальный диаметр колеса 1600
-          мм, максимальная ширина колеса 780 мм, усилие отрыва кромки шины 1500 кг, рабочее давление в гидросистеме до
-          130 бар, максимальная потребляемая мощность 2.9 кВт, электропитание 3ф.х380-400/50 Гц, вес 560 кг. В комплекте
-          поставки: выносной пульт управления, тиски-зажим для монтажа шин и монтажная лопатка)<br/>
-          <span>Балансировочный станок TROMMELBERG СВ1448</span><br>
-          (АВТОМАТ, диаметр диска 10" - 24", ширина колеса 1.5" - 20", время измерения 7 сек, максимальный диаметр
-          колеса 1016 мм / 40", максимальный вес колеса 130 кг, рабочее давление воздуха 8-10 бар, точность балансировки
-          ёс1 г, потребляемая мощность 300 Вт, электропитание 3ф.х380-400/50 В/Гц, вес 342 кг)<br/>
-          <span>Компрессор поршневой REMEZA СБ4/Ф-500.АВ858/16</span><br/>
-          (Ресивер 500 л., производительность по всасыванию 850, давление 16 бар, 380 В, вес 320 кг)<br>
-          <span>Домкрат TROMMELBERG SD101902</span><br/>
-          (Грузоподъемность 22 т, высота подхвата 226 мм, максимальная высота подъёма 450 мм, рабочее давление воздуха
-          7.5-8.5 бар, высота винта 105 мм, вес 36.5 кг)<br/>
-          <span>Пневмогайковерт NORDBERG IT 4250</span><br/>
-          (Размер квадрата 1", максимальное усилие 3388 Нм, число оборотов 4200 об/мин, вес 14,85 кг, потребление
-          воздуха 283 л/мин, давление 6.2 бар).
-          Набор ударных торцевых головок 1" KING TONY 8410MP
-          (шестигранные головки размерами 24, 27, 30, 32, 33, 36, 38 и 41 мм)
-
-          <br/>
-          <br/>
-          <span>Цена за 2 станка (шиномонтажный + балансировочный)
-            <!--              <span class="price-currency" data-currency="USD">7 760</span> руб.</span>-->
-              <span class="price-currency">875 000</span> руб.</span>
-        </p>
+    <div class="col-md-6 col-sm-6 col-xs-12 map-box-1-wp">
+      <div class="map-box map-box-2">
+        <p><span>2</span>Позвоните реальному клиенту,<br/>купившему оборудование</p>
       </div>
-      <div class="wrap-set-btn">
-        <p>цена за полный комплект
-          <!--              <span class="price-currency" data-currency="USD">10 079</span>-->
-          <span class="price-currency">1 150 000</span>
-          <span> р</span>
-        </p>
-        <div class="button-set button form-button set-btn set-btn-right">
-          <a href="#openModal_econom" class="" onclick="yaCounter42161509.reachGoal('komplektGPRO'); return true;">узнать
-            подробнее</a>
-
-        </div>
-        <div class="compliance" style="font-size:9px; font-weight:300;"><a href="#openModal3" target="_self"
-                                                                           style="color:#D3D3D3; text-decoration: underline;">Нажимая
-            кнопку, вы даете согласие на обработку персональных данных</a></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6 map-text">
+      <p><span>538</span><br/>Городов поставок<br/>за 2022 г.</p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 map-text">
+      <p><span>186</span><br/>Открыто новых шиномонтажей<br/>за 2022 г.</p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 map-text">
+      <p><span>451</span><br/>Доукомплектовано автосервисов<br/>в 2022 г.</p>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6 map-text">
+      <p><span>3327</span><br/>Единиц оборудования в ассортименте</p>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="map-container">
+      <div id="map">
+        <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KT5Sw3h8-UvqmBxA1pQ-B3Bo0Vy47Ooc&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false">
+        </script>
       </div>
     </div>
   </div>
 </div>
 
-<div class="wrap-gray">
+<div class="wrap-contract">
   <div class="container">
-    <div class="row  set-margin-adaptiv" id="profi-complect">
-      <div class="col-md-5 col-sm-12 col-md-push-7">
-        <div class="position4">
-          <div class="set-position"><img src="img/set_image_22.png" class="set-item-img" width="650" alt=""></div>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="contract">
+          <img src="img/contract.png" alt="">
         </div>
       </div>
-      <div class="col-md-7 col-sm-12 col-md-pull-5">
-        <div class="set-text">
-          <h4><span>Комплект &laquo;Стандарт&raquo;</span></h4>
-          <p><span>Грузовой шиномонтажный станок СИВИК (SIVIK) ГШС-515А </span><br/></p>
-          <p align="justify">
-            (АВТОМАТ, до 27", максимальный диаметр колеса 1600 мм, максимальная ширина колеса 780 мм, рабочее давление в
-            гидросистеме до 130 бар, максимальная потребляемая мощность 1,8 кВт, вес 560 кг.)<br>
-            <span>Балансировочный станок грузовой SIVIK TRUCKER STANDARD </span><br/>
-            (LED-дисплей, диаметр диска 24", ширина диска до 20" (508мм), время измерения легковых колес 12 сек, время
-            измерения грузовых колес 50 сек, максимальный диаметр колеса 1200 мм / 47,2", максимальный вес колеса 200
-            кг, давление воздуха в пневмосистеме 8-10 бар, точность измерения 1г, мощность 500 Вт, питание 200 В, вес
-            280 кг)<br/>
-            <span>Компрессор поршневой REMEZA СБ4/Ф-500.АВ858/16</span><br/>
-            (Ресивер 500 л., производительность по всасыванию 850, давление 16 бар, 380 В, вес 320 кг )<br/>
-            <span>Домкрат TROMMELBERG SD101902</span><br/>
-            (Грузоподъемность 22 т, высота подхвата 226 мм, максимальная высота подъёшма 450 мм, рабочее давление
-            воздуха 7.5-8.5 бар, высота винта 105 мм, вес 36.5 кг)<br/>
-            <span>Пневмогайковерт NORDBERG IT 4250</span><br/>
-            (размер квадрата 1", максимальное усилие 3388 Нм, число оборотов 4200 об/мин, вес 14,85 кг, потребление
-            воздуха 283 л/мин, давление 6.2 бар).
-            Набор ударных торцевых головок 1" KING TONY 8410MP
-            (шестигранные головки размерами 24, 27, 30, 32, 33, 36, 38 и 41 мм)
-
-            <br/>
-            <br/>
-            <span>Цена за 2 станка (шиномонтажный + балансировочный)
-              <!--              <span class="price-currency" data-currency="USD">8 110</span>-->
-              <span class="price-currency">840 000</span>
-              <span> руб.</span>
-          </p>
-        </div>
-        <div class="wrap-set-btn wrap-set-btn-2">
-          <p>цена за полный комплект
-            <!--              <span class="price-currency" data-currency="USD">10 428</span>-->
-            <span class="price-currency">1 100 000</span>
-            <span> р</span>
-          </p>
-          <div class="button-set button form-button set-btn set-btn-right">
-            <a href="#openModal_professional" class=""
-               onclick="yaCounter42161509.reachGoal('komplektGSTANDART'); return true;">узнать подробнее</a>
-          </div>
-          <div class="compliance" style="font-size:9px; font-weight:300;"><a href="#openModal3" target="_self"
-                                                                             style="color:#D3D3D3; text-decoration: underline;">Нажимая
-              кнопку, вы даете согласие на обработку персональных данных</a></div>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="contract-text">
+          <p>Отгружаем оборудование <br/>только по официальному<br/> договору поставки</p>
         </div>
       </div>
-
     </div>
   </div>
 </div>
 
-
-<div class="container">
-  <div class="row  set-margin-adaptiv" id="profi-poluavtomat-complect">
-    <div class="col-md-5 col-sm-12">
-      <div class="position4">
-        <div class="set-position"><img src="img/set_image_33.jpg" class="set-item-img" width="650" alt=""></div>
+<div class="wrap-section-price">
+  <div class="container">
+    <div class="row">
+      <div class="wrap-form-credit">
+        <form method="post" action="/sender/send.php" class="sform" id="form_10"
+              onsubmit="yaCounter38510265.reachGoal('cel11'); return true;">
+          <h4>хочешь купить в лизинг?<br/></h4>
+          <p>Сделаем рассчет суммы лизинга и отправим <span>прайс лист</span></p>
+          <input type="hidden" name="subject" value="Отправьте заявку на расчёт суммы кредита">
+          <div class="wrap-input-name-credit">
+            <input class="input-text input-name-crd input-price input-credit" type="text" name="name" placeholder="Имя">
+          </div>
+          <div class="wrap-input-telephone-credit">
+            <input class="input-text input-phone-crd input-price input-credit phone-mask" id="inputf10" maxlength="18"
+                   type="text" name="phone" placeholder="Телефон*" required>
+          </div>
+          <div class="wrap-form-btn-credit">
+            <input class="form-button form-1-btn btn-credit" type="submit" name="price" value="Купить в кредит">
+          </div>
+          <div class="alert_on" id="phone_bottom_10"></div>
+          <input type="hidden" name="typsh" value="Покрасочное">
+          <div class="compliance" style="font-size:9px; font-weight:300; text-transform:none;">
+            <a href="#openModal3" target="_self" style="color:#D3D3D3; text-decoration: underline;">
+              Нажимая кнопку, вы даете согласие на обработку персональных данных
+            </a>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="col-md-7 col-sm-12">
-      <div class="set-text">
-        <h4><span>Комплект &laquo;Эконом&raquo;</span></h4>
-        <p><span>Шиномонтажный станок для грузовых авто NORDBERG 46TRKE</span><br/></p>
-        <p align="justify">
-          (АВТОМАТ, размер диска 355,6 - 660,4 мм / 14-26, Максимальная ширина колеса 780 мм (31"), Максимальный диаметр
-          колеса 1600 мм (63"), Максимальный вес колеса 500 кг, Мощность гидростанции 1,5 кВт 380В/50Гц/3ф, Мощность
-          электромотора 1,8 кВт 380В/50Гц/3ф, Вес брутто/ нетто 520 кг/ 670 кг)<br>
-          <span>Балансировочный станок для грузовых авто NORDBERG 45TRKE </span><br/>
-          (автомат, макс. диаметр колеса 40" (1016 мм), мощность мотора 90 Вт, погрешность вычислений ёс 3 гр.,
-          электропитание 380В, 50Гц, период вычислений минимально 7 сек. (при весе колеса около 20 кг), скорость
-          вращения 100-200 об./мин., диаметр вала 42 мм, диаметр диска ёс 254-610 мм / 10-24", макс.вес колеса 150 кг,
-          ширина диска 38-510 мм/1,5-20тАЭ, измерение дистанции и диаметра ручное, педаль тормоза есть, шумность <70 Дб,
-          вес брутто 316,6 кг)<br/>
-          <span>Домкрат подкатной пневмногидравлический, Г/П 22 тонны NORDBERG N3322L </span><br/>
-          (Бутылочный, грузоподъемность 22000.0 кг , рабочее давление 6,2 атм, максимальная высота 465 мм, минимальная
-          выоста 225 мм) <br/>
-          <span>Компрессор поршневой REMEZA СБ4/Ф-500.АВ858/16</span><br/>
-          (Ресивер 500 л., производительность по всасыванию 850, давление 16 бар, 380 В, вес 320 кг)<br/>
-          <span>Пневмогайковерт NORDBERG IT 4250</span><br/>
-          (размер квадрата 1", максимальное усилие 3388 Нм, число оборотов 4200 об/мин, вес 14,85 кг, потребление
-          воздуха 283 л/мин, давление 6.2 бар).
-          Набор ударных торцевых головок 1" KING TONY 8410MP
-          (шестигранные головки размерами 24, 27, 30, 32, 33, 36, 38 и 41 мм)
+  </div>
+</div>
 
-          <br/>
-          <br/>
-          <span> Цена за 2 станка (шиномонтажный + балансировочный)
-            <!--              <span class="price-currency" data-currency="USD">6 340</span> руб.-->
-              <span class="price-currency">598 000</span> руб.
-            </span>
-        </p>
-      </div>
-      <div class="wrap-set-btn">
-        <p>цена за полный комплект
-          <!--              <span class="price-currency" data-currency="USD">8 674</span>-->
-          <span class="price-currency">870 000</span>
-          <span> р</span>
-        </p>
-        <div class="button-set button form-button set-btn set-btn-right">
-          <a href="#openModal_professional-semiautomatic" class=""
-             onclick="yaCounter42161509.reachGoal('komplektGECONOM'); return true;">узнать подробнее</a>
+<div class="container section-leasing" style="text-align:center;">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-12 footer-info">
+      <p>Партнеры по кредитованию:
+      <div class="row brands">
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank1.jpg" alt="">
         </div>
-        <div class="compliance" style="font-size:9px; font-weight:300;"><a href="#openModal3" target="_self"
-                                                                           style="color:#D3D3D3; text-decoration: underline;">Нажимая
-            кнопку, вы даете согласие на обработку персональных данных</a></div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank2.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank7.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank4.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank5.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank6.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank8.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 footer-info">
+      <p>Партнеры по лизингу:</p>
+      <div class="row brands">
+        <div class="brands__img">
+          <img src="img/leasing-companies/liz1.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/liz2.png" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/liz3.png" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/liz4.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/liz5.jpg" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/liz6.png" alt="">
+        </div>
+        <div class="brands__img">
+          <img src="img/leasing-companies/bank8.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -1242,7 +1007,7 @@ if (isset($_GET['utm_source'])) {
   <div>
     <a href="#close" title="Close" class="close"><span></span></a>
     <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и получи каталог <span id="catalogName2"></span></h4>
+      <h4>Заполните форму<br/>и получите предложение <span id="catalogName2"></span></h4>
       <form method="post" action="/sender/send.php" id="form_14" class="sform"
             onsubmit="yaCounter44176079.reachGoal('cel1'); return true;">
         <input type="hidden" id="ya-city" value="">
@@ -1257,7 +1022,7 @@ if (isset($_GET['utm_source'])) {
         <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
         <div class="wrapper-button">
           <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Скачать каталог">
+                 value="Получить предложение">
         </div>
         <input type="hidden" name="typsh" value="Автосервисное">
       </form>
@@ -1487,6 +1252,360 @@ if (isset($_GET['utm_source'])) {
 </div>
 
 
+<div id="openModal3" class="modalDialog2">
+  <div>
+    <a href="#close" title="Close" class="close"><span></span></a>
+    <div class="modal-box">
+      <div class="prokrutka">
+        <div class="otstup">
+          <h1>Согласие пользователя сайта на обработку персональных данных</h1>
+          <br>
+          <h2>ФЗ «О персональных данных» от 27.07.2006 N 152-ФЗ регламентирует, что согласие на обработку персональных
+            данных может быть дано гражданином или его представителем в любой позволяющей подтвердить факт его
+            получения форме, если иное не установлено федеральным законом. В случае, если наличие письменного согласия
+            в силу закона не обязательно, гражданин может выразить свое согласие на обработку персональных данных
+            любым способом, в частности проставлением отметки в электронном виде.</h2>
+          <h2>Действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, я
+            (далее – Пользователь) даю свое согласие ООО «Центр технического оборудования» (далее –
+            Компания) (ИНН 4205274440), которое расположено по адресу 650000, г. Кемерово, пр.
+            Притомский, д. 7/1, на обработку своих персональных данных, включая страницы, расположенные
+            на его поддоменах (далее – Сайт) в соответствии со следующим перечнем:</h2></div>
+        <h3>• фамилия, имя, отчество физического лица и/или индивидуального предпринимателя, занимаемая
+          должность, адрес электронной почты,<br>контактный телефон, адрес местонахождения;
+          <br>• источник
+          захода на Сайт и информация поискового или рекламного запроса;
+          <br>• данные о пользовательском устройстве (среди которых разрешение, версия и другие атрибуты,
+          характеризующие пользовательское устройство);
+          <br>• пользовательские клики, просмотры страниц, заполнения полей, показы и просмотры баннеров и
+          видео;
+          <br>• данные, характеризующие аудиторные сегменты;
+          <br>• параметры сессии;
+          <br>• данные о времени посещения;
+          <br>• информация, хранимая в cookie,
+          <br>• IP адрес;
+          <br>• другие данные, предоставляемые Пользователем по собственной инициативе.</h3></p>
+        <div class="otstup">
+          <h2>Для целей повышения осведомленности пользователей Сайта о товарах/работах/услугах
+            Компании, предоставления релевантной рекламной информации, оптимизации рекламы, оказания
+            информационной поддержки, консультирования, проведения маркетинговых кампаний (в т.ч.
+            email-рассылок и SMS- уведомлений о новостях и акциях и т.п.), отправки уведомлений о статусах
+            обращений, заявок, заказов, а также в иных случаях использования Сайта пользователями.
+            Персональные данные не являются общедоступными. Основанием для обработки персональных
+            данных является: ст. 24 Конституции Российской Федерации; ст.6 Федерального закона №152-ФЗ
+            «О персональных данных»; Устав ООО «Центр технического оборудования»; настоящее согласие
+            на обработку персональных данных. В ходе обработки с персональными данными будут
+            совершены следующие действия: сбор; запись; систематизация; накопление; хранение; уточнение
+            (обновление, изменение); извлечение; использование; передача (распространение, предоставление,
+            доступ); блокирование; удаление; уничтожение. Настоящее согласие действует до дня его отзыва
+            Пользователем в письменной форме. Данное согласие может быть отозвано путем направления
+            письменного отзыва по месту нахождения Компании по почте или путем направления
+            электронного письма на адрес электронной почты 88007753106@mail.ru. В указанном случае
+            Компания прекращает обработку и уничтожает персональные данные Пользователя в срок, не
+            превышающий 30 (тридцати) календарных дней с даты получения соответствующего отзыва.
+            <br></h2>
+          <h5><br>Утверждено приказом ООО «Центр технического оборудования»
+            №2017/06-1 от 15.06.2017.</h5>
+          <br>
+          <br>
+          <br>
+
+          <input type="hidden" name="typsh" value="Автосервисное">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="openModal4" class="modalDialog2">
+  <div>
+    <a href="#close" title="Close" class="close"><span></span></a>
+    <div class="modal-box">
+      <div class="prokrutka">
+        <div class="otstup">
+          <h1>ПОЛИТИКА ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+          <h2>Дата размещения на Сайте «30» июня 2017 года.
+            Настоящая Политика обработки персональных данных (далее – Политика) определяет общие
+            принципы и порядок обработки персональных данных Пользователей онлайн-магазина и меры по
+            обеспечению их безопасности в Центр технического оборудования.</h2>
+          <h1>ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h1>
+          <h2>Стороны используют следующие термины в указанном ниже значении:</h2></div>
+        <h3>a) Данные – иные данные о Пользователе (не входящие в понятие персональных данных).
+          <br>b) Законодательство – действующее законодательство Российской Федерации.
+          Оператор – Центр технического оборудования, самостоятельно или совместно с другими лицами
+          организующее и (или) осуществляющее обработку персональных данных, а также определяющее
+          цели обработки персональных данных, состав персональных данных, подлежащих обработке,
+          действия (операции), совершаемые с персональными данными.
+          <br>c) Персональные данные – любая информация, относящаяся к прямо или косвенно определённому
+          или определяемому физическому лицу (Пользователю).
+          Пользователь – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт
+          интернет-магазина.
+          <br>d) Предоставление персональных данных – действия, направленные на раскрытие Персональных
+          данных определённому лицу или определённому кругу лиц.
+          <br>e) Сайт – сайт, расположенный в сети Интернет, где пользователь оставляет персональные данные.
+          <br>f) Субъект персональных данных – Пользователь (физическое лицо), к которому относятся
+          Персональные данные.
+          <br>g) Транспортные компании – третьи лица, оказывающие курьерские услуги.</h3>
+
+        <h2>Иные термины, используемые в Политике трактуются в соответствии с Законодательством РФ.</h2>
+        <h1>1. ОБЩИЕ ПОЛОЖЕНИЯ</h1>
+        <h3>1.1. Настоящая Политика в отношении обработки персональных данных разработана в
+          соответствии с положениями Федерального закона от 27.07.2006 №152-ФЗ «О персональных
+          данных» (с изменениями и дополнениями), другими законодательными и нормативными
+          правовыми актами и определяет порядок работы с Персональными данными Пользователей и
+          (или) передаваемых Пользователями и требования к обеспечению их безопасности.
+          <br>1.2. Мероприятия по обеспечению безопасности персональных данных являются составной частью
+          деятельности Оператора.</h3>
+        <h1>2. ПРИНЦИПЫ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+        <h2>2.1. Обработка Персональных данных Оператором осуществляется в соответствии со следующими
+          принципами:</h2>
+        <h3>2.1.1. Законность и справедливая основа обработки Персональных данных. Оператор принимает
+          все необходимые меры по выполнению требований Законодательства, не обрабатывает
+          Персональные данные в случаях, когда это не допускается Законодательством, не использует
+          Персональные данные во вред Пользователю.
+          <br>2.1.2. Обработка только тех Персональных данных, которые отвечают заранее объявленным целям
+          их обработки. Соответствие содержания и объёма обрабатываемых Персональных данных
+          заявленным целям обработки. Недопущение обработки Персональных данных, не совместимых с
+          целями сбора Персональных данных, а также избыточных по отношению к заявленным целям их
+          обработки.
+          Оператор обрабатывает Персональные данные исключительно в целях исполнения договорных
+          обязательств перед Пользователем.
+          <br>2.1.3. Обеспечение точности, достаточности и актуальности Персональных данных по отношению
+          к целям обработки Персональных данных. Оператор принимает все разумные меры по поддержке
+          актуальности обрабатываемых Персональных данных, включая, но не ограничиваясь реализацией
+          права каждого Субъекта получать для ознакомления свои Персональные данные и требовать от
+          Оператора их уточнения, блокирования или уничтожения в случае, если Персональные данные
+          являются неполными, устаревшими, неточными, незаконно полученными или не являются
+          необходимыми для заявленных выше целей обработки.
+          <br>2.1.4. Хранение Персональных данных в форме, позволяющей определить Пользователя
+          Персональных данных, не дольше, чем этого требуют цели обработки Персональных данных, если
+          срок хранения Персональных данных не установлен федеральным законодательством, договором,
+          стороной которого или выгодоприобретателем по которому является Пользователь Персональных
+          данных.
+          <br>2.1.5. Недопустимость объединения созданных для несовместимых между собой целей баз данных
+          Информационных систем Персональных данных.</h3>
+        <h1>3. УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+        <h2>3.1. Обработка Персональных данных Оператором допускается в следующих случаях:</h2>
+        <h3>3.1.1. При наличии согласия Пользователя на обработку его Персональных данных. Согласие
+          дается путем акцепта Публичной оферты, размещенной на Сайте или путем оформления Заказа,
+          способами, указанными на Сайте.
+          <br>3.1.2. При передаче Персональных данных Субъекта персональных данных Пользователем при
+          осуществлении заказа на Сайте. Пользователь гарантирует, что предварительно получил от
+          Субъекта персональных данных согласие на передачу данных Оператору.
+          <br>3.1.3. Персональные данные подлежат опубликованию или обязательному раскрытию в
+          соответствии с Законодательством.</h3>
+        <h2>3.2. Оператор не раскрывает третьим лицам и не распространяет Персональные данные без
+          согласия Пользователя, если иное не предусмотрено Законодательством. <br>3.3. Оператор не
+          обрабатывает Персональные данные, относящиеся к специальным категориям и касающиеся
+          расовой и национальной принадлежности, политических взгляд
+          ов, религиозных или философских убеждений, состояния здоровья, интимной жизни Субъекта
+          персональных данных, о членстве Субъекта персональных данных в общественных объединениях,
+          за исключением случаев, прямо предусмотренных Законодательством.
+          <br>3.4. Оператор не осуществляет Трансграничную передачу Персональных данных Пользователей.</h2>
+        <h1>4. СБОР И ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ И ИНЫХ ДАННЫХ</h1>
+        <h2>4.1. Оператор собирает и хранит только те Персональные данные, которые необходимы для
+          предоставления услуг Пользователю для осуществления продажи товаров посредством Сайта. При
+          этом сбор Персональных данных может осуществляться как посредством Сайта, так и в офисе
+          Оператора.
+          <br>4.2. Оператор обрабатывает Персональные данные в следующих целях:</h2>
+        <h3>4.2.1. осуществления деятельности, предусмотренной? Уставом Общества, действующим
+          законодательством РФ;
+          <br>4.2.2. выполнения обязательств Оператора перед Пользователем по продаже товаров, в том числе
+          обработку платежей, доставку товаров.
+          <br>4.2.3. для связи с Пользователями в случае необходимости, в том числе для направления
+          уведомлении?, информации и запросов, связанных с оказанием услуг, а также обработки
+          заявлении?, запросов и заявок Пользователей;
+          <br>4.2.4. для улучшение качества услуг, оказываемых Оператором;
+          <br>4.2.5. для продвижения услуг на рынке путем осуществления прямых контактов с Пользователями;
+          <br>4.2.6. для проведения статистических и иных исследовании? на основе обезличенных
+          персональных данных.</h3>
+        <h2>4.3.В целях, указанных в п. 4.2. Оператор обрабатывает следующие персональные:</h2>
+        <h3>Фамилия, имя и отчество;
+          <br>Адрес электронной почты;
+          <br>Телефон;
+          <br>Данные банковской карты, с которой осуществляется оплата (наименование держателя банковской
+          <br>карты, номер карты, CVV код);
+          <br>IP адрес Пользователя;
+          <br>Тип браузера Пользователя;
+          <br>Адрес доставки товаров.</h3>
+        <h2>4.4. В отношении Персональных данных и иных Данных Пользователя сохраняется их
+          конфиденциальность, кроме случаев, когда указанные данные являются общедоступными.
+          <br>4.5. Оператор имеет право сохранять архивную копию Персональных данных и иных Данных, в
+          том числе после удаления аккаунта Пользователя.
+          <br>4.6. Оператор имеет право передавать Персональные данные и иные Данные Пользователя без
+          согласия Пользователя следующим лицам:</h2>
+        <h3>4.6.1. Государственным органам, в том числе органам дознания и следствия, и органам местного
+          самоуправления по их мотивированному запросу.
+          <br>4.6.2. Партнёрам Оператора c целью выполнения договорных обязательств перед Пользователем.
+          <br>4.6.3. В иных случаях, прямо предусмотренных действующим законодательством РФ.</h3>
+        <h2>4.7. Оператор имеет право передавать Персональные данные и иные Данные третьим лицам, не
+          указанным в п. 4.6 настоящей Политики, в следующих случаях:</h2>
+        <h3>4.7.1. Пользователь выразил свое согласие на такие действия.
+          <br>4.7.2. Передача необходима в рамках использования Пользователем Сайта или продажи товаров
+          Пользователю (в том числе в целях доставки товаров);
+          <br>4.7.3. Передача происходит в рамках продажи или иной передачи бизнеса (полностью или в
+          части), при этом к приобретателю переходят все обязательства по соблюдению условий настоящей
+          Политики.</h3>
+        <h2>4.8. Оператор осуществляет автоматизированную и неавтоматизированную обработки
+          Персональных данных и иных Данных.
+          <br>4.9. Доступ к Информационным системам, содержащим Персональные данные, обеспечивается
+          системой паролей. Пароли устанавливаются уполномоченными сотрудниками Оператора и
+          индивидуально сообщаются работникам Оператора, имеющим доступ к Персональным
+          данным/Данным.
+          <br>4.10. Оператор передает обработанную информацию транспортным (курьерским) компаниям на
+          основании согласия Пользователя (ст. 9 ФЗ «О персональных данных»).
+          <br>4.11. Оператор не несет ответственности за ненадлежащую обработку персональных данных
+          Пользователя, осуществляемую Транспортными компаниями.
+          <br>4.12. При получении Оператором персональных данных запроса, содержащего отзыв субъекта
+          персональных данных согласия на обработку персональных данных, то в течение 30 (тридцати)
+          календарных дней с момента его получения обязан удалить персональные данные.</h2>
+        <h1>5. ИЗМЕНЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+        <h2>5.1. Пользователь может в любой момент изменить (обновить, дополнить) Персональные данные
+          посредством путём направления письменного заявления Оператору.
+          5.2. Пользователь в любой момент имеет право удалить Персональные данные/Данные.</h2>
+        <h1>6. КОНФИДЕНЦИАЛЬНОСТЬ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+        <h2>6.1. Оператор обеспечивает конфиденциальность обрабатываемых им Персональных
+          данных/Данных в порядке, предусмотренном Законодательством. Обеспечение
+          конфиденциальности не требуется в отношении:</h2>
+        <h3>6.1.1. Персональных данных после их обезличивания.
+          <br>6.1.2. Персональных данных, доступ неограниченного круга лиц к которым предоставлен
+          Пользователем либо по его просьбе (далее – Персональные данные, сделанные общедоступными
+          Пользователем).
+          <br>6.1.3. Персональных данных, подлежащих опубликованию или обязательному раскрытию в
+          соответствии с Законодательством.
+          <br>6.1.4. Не является нарушением конфиденциальности Персональных данных предоставление
+          Оператором информации транспортным (курьерским) компаниям и иным третьим лицам,
+          действующим на основании договора с Оператором для исполнения обязательств перед
+          Пользователем.</h3>
+        <h1>7. СОГЛАСИЕ ПОЛЬЗОВАТЕЛЯ НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+        <h2>7.1. Пользователь принимает решение о предоставлении своих Персональных данных Оператору и
+          даёт согласие на их обработку свободно, своей волей и в своём интересе. Согласие на обработку
+          Персональных данных должно быть конкретным, информированным и сознательным и
+          предоставляется Пользователем в момент его Регистрации на Сайте Оператора, а также в любой
+          позволяющей подтвердить факт его получения форме, если иное не установлено
+          Законодательством.
+          <br>7.2. Персональные данные лиц, вступивших в договорные обязательства с Оператором,
+          содержащиеся в единых государственных реестрах юридических лиц и индивидуальных
+          предпринимателей, являются открытыми и общедоступными, за исключением сведений о номере,
+          дате выдачи и органе, выдавшем документ, удостоверяющий личность физического лица. Охраны
+          их конфиденциальности и согласия Пользователей на обработку не требуется.
+          <br>7.3. В случае поступления запросов из организаций, не обладающих соответствующими
+          полномочиями, Оператор обязан получить предварительное согласие Пользователя на
+          предоставление его Персональных данных и предупредить лиц, получающих Персональные
+          данные, о том, что эти данные могут быть использованы лишь в целях, для которых они
+          сообщены, а также требовать от этих лиц подтверждения того, что это правило будет (было)
+          соблюдено.</h2>
+        <h1>8. ПРАВА СУБЪЕКТОВ ПЕРСОНАЛЬНЫХ ДАННЫХ</h1>
+        <h2>8.1. Пользователь имеет право на получение информации, касающейся обработки его
+          Персональных данных/Данных. Пользователь вправе требовать от Оператора уточнения его
+          Персональных данных, их блокирования или уничтожения в случае, если Персональные данные
+          являются неполными, устаревшими, неточными, незаконно полученными или не являются
+          необходимыми для заявленной цели обработки, а также принимать предусмотренные законом
+          меры по защите своих прав.
+          <br>8.2. Если Пользователь считает, что Оператор осуществляет обработку его Персональных данных
+          с нарушением требований Законодательства или иным образом нарушает его права и свободы,
+          Пользователь вправе обжаловать действия или бездействие Оператора в уполномоченном органе
+          по защите прав субъектов Персональных данных или в судебном порядке.
+          <br>8.3. Пользователь имеет право на защиту своих прав и законных интересов, в том числе на
+          возмещение убытков и (или) компенсацию морального вреда в судебном порядке.</h2>
+        <h1>9. ПЕРСОНАЛЬНЫЕ ДАННЫЕ ТРЕТЬИХ ЛИЦ, ИСПОЛЬЗУЕМЫЕ ПОЛЬЗОВАТЕЛЯМИ</h1>
+        <h2>9.1. Используя Сайт, Пользователь имеет право заносить данные третьих лиц для заказа товаров.
+          <br>9.2. Пользователь обязуется получить предварительное согласие субъекта Персональных данных
+          на их использование посредством Сайта. Пользователь самостоятельно несет ответственность за
+          отсутствие такого согласия.
+          <br>9.3. Оператор обязуется предпринять необходимые меры для обеспечения сохранности
+          Персональных данных третьих лиц, занесённых Пользователем.</h2>
+        <h1>10. ИНЫЕ ПОЛОЖЕНИЯ</h1>
+        <h2>10.1. К настоящей Политике и отношениям между Пользователем и Оператором, возникающим в
+          связи с применением Политики, подлежит к применению право Российской Федерации.
+          <br>10.2. Все возможные споры подлежат разрешению в соответствии с Законодательством по месту
+          регистрации Оператора.
+          Перед обращением в суд Пользователь должен соблюсти обязательный досудебный порядок и
+          направить Оператору соответствующую претензию в письменном виде. Срок ответа на претензию
+          составляет 30 (тридцать) рабочих дней.
+          <br>10.3. Если по тем или иным причинам одно или несколько положений Политики будут признаны
+          недействительными или не имеющими юридической силы, это не оказывает влияния на
+          действительность или применимость остальных положений Политики конфиденциальности.
+          <br>10.4. Оператор имеет право в любой момент изменять настоящую Политику (полностью или в
+          части) в одностороннем порядке без предварительного согласования с Пользователем. Все
+          изменения вступают в силу на следующий день после размещения на Сайте.
+          <br>10.5. Пользователь обязуется самостоятельно следить за изменениями Политики
+          конфиденциальности путем ознакомления с актуальной редакцией.</h2>
+        <br>
+        <br>
+        <br>
+
+        <input type="hidden" name="typsh" value="Автосервисное">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="openModal_2" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close"><span></span></a>
+    <div class="modal-box">
+      <h4>Оставь имя и телефон<br/>и получи каталог <span id="catalogName2"></span></h4>
+      <form method="post" action="/sender/send.php" id="form_14" class="sform"
+            onsubmit="yaCounter44176079.reachGoal('cel1'); return true;">
+        <input type="hidden" id="ya-city" value="">
+        <input type="hidden" name="subject" id="cNameId2" value="">
+        <div class="wrap-input-name-price">
+          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
+        </div>
+        <div class="wrap-input-telephone-price">
+          <input class="input-text input-modal phone-mask" id="inputf14" maxlength="18" type="text" name="phone"
+                 placeholder="Ваш телефон" required>
+        </div>
+        <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
+        <div class="wrapper-button">
+          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
+                 value="Получить предложение">
+          <div class="compliance" style="margin-top:-5%;font-size:9px;"><a href="#openModal3" target="_self"
+                                                                           style="color:#D3D3D3;">Нажимая кнопку, вы
+              даете согласие на обработку персональных данных</a></div>
+        </div>
+        <input type="hidden" name="typsh" value="Автосервисное">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close"><span></span></a>
+    <div class="modal-box">
+      <h4>Оставь имя и телефон<br/>и получи каталог <span id="catalogName2"></span></h4>
+      <form method="post" action="/sender/send.php" id="form_14" class="sform"
+            onsubmit="yaCounter44176079.reachGoal('cel2'); return true;">
+        <input type="hidden" id="ya-city" value="">
+        <input type="hidden" name="subject" id="cNameId2" value="">
+        <div class="wrap-input-name-price">
+          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
+        </div>
+        <div class="wrap-input-telephone-price">
+          <input class="input-text input-modal phone-mask" id="inputf14" maxlength="18" type="text" name="phone"
+                 placeholder="Ваш телефон" required>
+        </div>
+        <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
+        <div class="wrapper-button">
+          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
+                 value="Получить предложение">
+          <div class="compliance" style="margin-top:-5%;font-size:9px;">
+            <a href="#openModal3" target="_self" style="color:#D3D3D3;">
+              Нажимая кнопку, вы даете согласие на обработку персональных данных
+            </a>
+          </div>
+        </div>
+        <input type="hidden" name="typsh" value="Автосервисное">
+      </form>
+    </div>
+  </div>
+</div>
+
+
 <div class="hidden"></div>
 <!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -1512,39 +1631,12 @@ if (isset($_GET['utm_source'])) {
 <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&amp;lang=ru-RU"
         type="text/javascript"></script>
 <script src="js/jquery.simslider.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
 
 <script src="/sender/js/sender.js?rnd=<?= uniqid() ?>"></script>
 <!--<script src="/js/leads.catcher.js" async></script>-->
 
-<script>
-  jQuery(function ($) {
-    $('.block-1 .sliderBox').SimSlider({
-      next: '.nextBtn', // def: ".ss-next"
-      prev: '.prevBtn', // def: ".ss-prev"
-      item: '.SimSlider .slide', // def: ".ss-item"
-      'dots': '.dot',
-      'dotActClass': 'active',
-      speed: 900,
-      delay: 5000,
-      onAfterInit: function (sliders, nextBtn, prevBtn, dots) {
-        // событие после инициализации слайдера
-        // console.log( 'onAfterInit', sliders, nextBtn, prevBtn, dots );
-      },
-      onBeginAnimate: function (slider, status) {
-        // событие перед началом прокрутки слайдеров
-
-      },
-      onEndAnimate: function (slider, status) {
-        // событие после окончания прокрутки
-        if ($(slider).hasClass('sl-3') && status == 'visible') {
-          $(slider).find('.jq').animate({fontSize: "30px"}, 3000);
-        } else if ($(slider).hasClass('sl-3') && status == 'hidden') {
-          $(slider).find('.jq').css("font-size", "14px");
-        }
-      }
-    });
-  });
-</script>
 <script type="text/javascript">
   function viewdiv() {
 
@@ -1595,7 +1687,7 @@ if (isset($_GET['utm_source'])) {
 <!-- //Rating@Mail.ru counter -->
 
 <!-- Кнопка вверх -->
-<a style="display:scroll;position:fixed;bottom:15px;right:15px;" href="#" title="Вверх">
+<a style="position:fixed;bottom:15px;right:15px;" href="#" title="Вверх">
   <img border="0" alt="Back to TOP" src="img/arrow-point-to-close.png"/></a>
 
 <!-- Google Tag Manager -->

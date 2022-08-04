@@ -450,36 +450,35 @@ if (isset($_GET['utm_source'])) {
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header style="display: block;" class="add-tender-btn">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-5 col-lg-push-7">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 header-city-wrap">
-                        <div class="header-city">
-                            <p class="city-p">Москва</p>
-                            <a href="#openMenu" class="openMenu">город доставки</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6 col-sm-6 col-xs-6 header-phone-number">
-                        <p class="mgo-number-15766 mgo-number">8 (800) 550-5724</p>
-                        <a href="#openModal"> Звони! Поможем выбрать </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-7 col-lg-pull-5 clearfix">
-                <div class="logo">
-                    <img class="logo-img" src="img/logo.png" width="81" height="73" alt="Логотип">
-                </div>
-                <div class="header-logo-text">
-                    <h1>Продажа автосервисного оборудования с доставкой по России</h1>
-                    <span>Центр Технического Оборудования</span>
-                </div>
-                <a href="#openModal_tender" class="tender-btn">Пригласить на тендер</a>
-            </div>
-
-        </div>
+<header class="header">
+  <div class="container header__container">
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 89" style="height: 100%">
+        <style>
+					.st1 {
+						fill: #3a3b3b
+					}
+        </style>
+        <path fill="#de343d" d="M34 89L0 69V30l34-20v15L13 37.2V62l21 12.3 21-12.5V37l13-7v39z"/>
+        <path class="st1"
+              d="M40 0v40l34-20.3zM25 44v7h-4v-7h-4v11h10v2h2v-3h-1v-6h4v7h4v-7h4v7h11V44H25zm22 7h-3v-3h3v3z"/>
+      </svg>
+      <span class="header-logo-text">Центр <br> Технического <br> Оборудования</span>
     </div>
+    <div class="header__button-container">
+      <a href="#openModal_tender" class="tender-btn">Пригласить на тендер</a>
+    </div>
+    <div class="header-city-wrap">
+      <div class="header-city">
+        <p class="city-p">Москва</p>
+        <a href="#openMenu" class="openMenu">город доставки</a>
+      </div>
+    </div>
+    <div class="header-phone-number">
+      <p class="mgo-number-15766">8 (800) 550-5724</p>
+      <a href="#openModal"> Звони! Поможем выбрать </a>
+    </div>
+  </div>
 </header>
 
 <div class="container section-1 section-thank" style="padding-bottom: 0;">

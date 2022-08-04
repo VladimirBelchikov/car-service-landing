@@ -303,14 +303,14 @@ function markWhatsAppMessage() {
             return true;
         });
 
-        body.delegate('form.sform [name=phone]', 'keyup', function (event) {
-            var phone = $(this).val();
-            var form = $(this).closest('form');
-
-            if (validPhone(phone)) {
-                collect(form, 1)
-            }
-        });
+        // body.delegate('form.sform [name=phone]', 'keyup', function (event) {
+        //     var phone = $(this).val();
+        //     var form = $(this).closest('form');
+        //
+        //     if (validPhone(phone)) {
+        //         collect(form, 1)
+        //     }
+        // });
 
         body.delegate('form.sform', 'submit', function (event) {
             event.preventDefault();

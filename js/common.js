@@ -1,8 +1,10 @@
 $(document).ready(function () {
-
-  document.querySelector('.scroll-button').addEventListener('click', () => {
-    document.querySelector('.before-form-title').scrollIntoView({behavior: 'smooth', block: 'start'});
-  })
+  const scrollBtn = document.querySelector('.scroll-button');
+  if (scrollBtn) {
+    scrollBtn.addEventListener('click', () => {
+      document.querySelector('.before-form-title').scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
+  }
 
 
   //mask

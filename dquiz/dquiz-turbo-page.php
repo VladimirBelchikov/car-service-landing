@@ -60,6 +60,15 @@
           </div>
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
+									<span class="control control--checkbox">Другое
+										<input type="checkbox" value="Другое"/>
+										<span class="control__indicator"></span>
+										<span class="control__background"></span>
+									</span>
+            </label>
+          </div>
+          <div class="dquiz-col-12 dquiz-col-md-6">
+            <label class="control-wrap">
 									<span class="control control--checkbox">Планирую открытие, нужна консультация
 										<input type="checkbox" value="Планирую открытие, нужна консультация"/>
 										<span class="control__indicator"></span>
@@ -121,9 +130,8 @@
           </div>
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">Хочу получить вилку цен и выбрать
-										<input type="radio" name="radio-1"
-                           value="Хочу получить вилку цен и выбрать"/>
+									<span class="control control--radio">Под указанный бюджет
+										<input type="radio" name="radio-1" value="Под указанный бюджет"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -147,8 +155,8 @@
         <div class="dquiz-row">
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">В течение недели
-										<input type="radio" name="radio-2" value="В течение недели"/>
+									<span class="control control--radio">Как можно скорее
+										<input type="radio" name="radio-2" value="Как можно скорее"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -156,8 +164,8 @@
           </div>
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">В течение двух недель
-										<input type="radio" name="radio-2" value="В течение двух недель"/>
+									<span class="control control--radio">В ближайшее время
+										<input type="radio" name="radio-2" value="В ближайшее время"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -165,8 +173,8 @@
           </div>
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">В течение месяца
-										<input type="radio" name="radio-2" value="В течение месяца"/>
+									<span class="control control--radio">Готов заказать, если цена хорошая
+										<input type="radio" name="radio-2" value="Готов заказать, если цена хорошая"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -174,8 +182,8 @@
           </div>
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">На следующий сезон
-										<input type="radio" name="radio-2" value="На следующий сезон"/>
+									<span class="control control--radio">Планирую открытие, нужно спланировать расходы на оборудование
+										<input type="radio" name="radio-2" value="Планирую открытие, нужно спланировать расходы на оборудование"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -199,8 +207,8 @@
         <div class="dquiz-row">
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">Куплю за наличный или безналичный расчет
-										<input type="radio" name="radio-3" value="Куплю за наличный или безналичный расчет"/>
+									<span class="control control--radio">Куплю за наличный расчет или оплачу картой
+										<input type="radio" name="radio-3" value="Куплю за наличный расчет или оплачу картой"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -208,8 +216,26 @@
           </div>
           <div class="dquiz-col-12 dquiz-col-md-6">
             <label class="control-wrap">
-									<span class="control control--radio">Куплю в кредит или лизинг
-										<input type="radio" name="radio-3" value="Куплю в кредит или лизинг"/>
+									<span class="control control--radio">Банковский перевод для юридических лиц
+										<input type="radio" name="radio-3" value="Банковский перевод для юридических лиц"/>
+										<span class="control__indicator"></span>
+										<span class="control__background"></span>
+									</span>
+            </label>
+          </div>
+          <div class="dquiz-col-12 dquiz-col-md-6">
+            <label class="control-wrap">
+									<span class="control control--radio">Хочу купить в кредит
+										<input type="radio" name="radio-3" value="Хочу купить в кредит"/>
+										<span class="control__indicator"></span>
+										<span class="control__background"></span>
+									</span>
+            </label>
+          </div>
+          <div class="dquiz-col-12 dquiz-col-md-6">
+            <label class="control-wrap">
+									<span class="control control--radio">Хочу купить в лизинг
+										<input type="radio" name="radio-3" value="Хочу купить в лизинг"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>

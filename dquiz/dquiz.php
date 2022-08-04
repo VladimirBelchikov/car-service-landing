@@ -12,7 +12,7 @@
 		<div class="dquiz__slider-wrap">
 			<div class="dquiz-question" data-type="checkbox">
 				<div class="dquiz-question__title">
-					<p class="dquiz-question__title-text">Какое оборудование необходимо?</p>
+					<p class="dquiz-question__title-text">Под какое авто нужно оборудование?</p>
 					<div class="dquiz-tags dquiz-question__dquiz-tags">
 						<div class="dquiz-tags__item"><svg viewBox="0 0 24 24"><path d="M12,2C17.52,2 22,6.48 22,12C22,17.52 17.52,22 12,22C6.48,22 2,17.52 2,12C2,6.48 6.48,2 12,2M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z" stroke-width="0" fill-rule="nonzero"></path></svg>выберите один или несколько</div>
 					</div>
@@ -20,8 +20,8 @@
 				<div class="dquiz-row">
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--checkbox">Хочу увеличить предоставляемые услуги
-										<input type="checkbox" value="Хочу увеличить предоставляемые услуги"/>
+									<span class="control control--checkbox">Легковое
+										<input type="checkbox" value="Легковое"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -29,8 +29,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--checkbox">Балансировочный станок
-										<input type="checkbox" value="Балансировочный станок"/>
+									<span class="control control--checkbox">Грузовое
+										<input type="checkbox" value="Грузовое"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -38,8 +38,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--checkbox">Подъемное оборудование
-										<input type="checkbox" value="Подъемное оборудование"/>
+									<span class="control control--checkbox">Карьерная техника
+										<input type="checkbox" value="Карьерная техника"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -47,8 +47,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--checkbox">Автосервисное оборудование
-										<input type="checkbox" value="Автосервисное оборудование"/>
+									<span class="control control--checkbox">Другое
+										<input type="checkbox" value="Другое"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -56,89 +56,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--checkbox">Стапели
-										<input type="checkbox" value="Стапели"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Сход-развал
-										<input type="checkbox" value="Сход-развал"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Шиномонтажный станок
-										<input type="checkbox" value="Шиномонтажный станок"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Станок для правки дисков
-										<input type="checkbox" value="Станок для правки дисков"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Вулканизатор
-										<input type="checkbox" value="Вулканизатор"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Борторасширитель
-										<input type="checkbox" value="Борторасширитель"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Компрессоры и ресиверы
-										<input type="checkbox" value="Компрессоры и ресиверы"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Домкраты
-										<input type="checkbox" value="Домкраты"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Другой инструмент
-										<input type="checkbox" value="Другой инструмент"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--checkbox">Я только начинаю, мне нужен полный комплект
-										<input type="checkbox" value="Я только начинаю, мне нужен полный комплект"/>
+									<span class="control control--checkbox">Планирую открытие, нужна консультация
+										<input type="checkbox" value="Планирую открытие, нужна консультация"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -154,15 +73,6 @@
 					</div>
 				</div>
 				<div class="dquiz-row">
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--radio">до 50 тысяч рублей
-										<input type="radio" name="radio-1" value="до 50 тысяч рублей"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
 									<span class="control control--radio">от 50 до 100 тысяч рублей
@@ -201,8 +111,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--radio">МНЕ НУЖНО САМОЕ ЛУЧШЕЕ ОБОРУДОВАНИЕ, КОТОРОЕ У ВАС ЕСТЬ!
-										<input type="radio" name="radio-1" value="МНЕ НУЖНО САМОЕ ЛУЧШЕЕ ОБОРУДОВАНИЕ, КОТОРОЕ У ВАС ЕСТЬ!"/>
+									<span class="control control--radio">Под указанный бюджет
+										<input type="radio" name="radio-1" value="Под указанный бюджет"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -220,8 +130,8 @@
 				<div class="dquiz-row">
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--radio">В течение недели
-										<input type="radio" name="radio-2" value="В течение недели"/>
+									<span class="control control--radio">Как можно скорее
+										<input type="radio" name="radio-2" value="Как можно скорее"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -229,8 +139,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--radio">В течение двух недель
-										<input type="radio" name="radio-2" value="В течение двух недель"/>
+									<span class="control control--radio">В ближайшее время
+										<input type="radio" name="radio-2" value="В ближайшее время"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -238,8 +148,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--radio">В течение месяца
-										<input type="radio" name="radio-2" value="В течение месяца"/>
+									<span class="control control--radio">Готов заказать, если цена хорошая
+										<input type="radio" name="radio-2" value="Готов заказать, если цена хорошая"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -247,17 +157,8 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--radio">На следующий сезон
-										<input type="radio" name="radio-2" value="На следующий сезон"/>
-										<span class="control__indicator"></span>
-										<span class="control__background"></span>
-									</span>
-						</label>
-					</div>
-					<div class="dquiz-col-12 dquiz-col-md-6">
-						<label class="control-wrap">
-									<span class="control control--radio">Я просто смотрю
-										<input type="radio" name="radio-2" value="Я просто смотрю"/>
+									<span class="control control--radio">Планирую открытие, нужно спланировать расходы на оборудование
+										<input type="radio" name="radio-2" value="Планирую открытие, нужно спланировать расходы на оборудование"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
@@ -284,13 +185,31 @@
 					</div>
 					<div class="dquiz-col-12 dquiz-col-md-6">
 						<label class="control-wrap">
-									<span class="control control--radio">Куплю в кредит
-										<input type="radio" name="radio-3" value="Куплю в кредит"/>
+									<span class="control control--radio">Банковский перевод для юридических лиц
+										<input type="radio" name="radio-3" value="Банковский перевод для юридических лиц"/>
 										<span class="control__indicator"></span>
 										<span class="control__background"></span>
 									</span>
 						</label>
 					</div>
+          <div class="dquiz-col-12 dquiz-col-md-6">
+            <label class="control-wrap">
+									<span class="control control--radio">Хочу купить в кредит
+										<input type="radio" name="radio-3" value="Хочу купить в кредит"/>
+										<span class="control__indicator"></span>
+										<span class="control__background"></span>
+									</span>
+            </label>
+          </div>
+          <div class="dquiz-col-12 dquiz-col-md-6">
+            <label class="control-wrap">
+									<span class="control control--radio">Хочу купить в лизинг
+										<input type="radio" name="radio-3" value="Хочу купить в лизинг"/>
+										<span class="control__indicator"></span>
+										<span class="control__background"></span>
+									</span>
+            </label>
+          </div>
 				</div>
 			</div>
 		</div>
@@ -327,7 +246,7 @@
 		<div class="dquiz-finish__wrapper">
 			<div class="dquiz-finish__header">
 				<div class="dquiz-finish__title">Отлично!</div>
-				<div class="dquiz-finishdescription">Мы подобрали для Вас 4 варианта! Чтобы посмотреть их заполните форму:</div>
+				<div class="dquiz-finishdescription">Заявка направлена в профильный отдел. Для получения предложения с вилкой цен укажите контактный номер телефона.</div>
 			</div>
 			<form class="dquiz-finish__form dquiz-form sform" action="/sender/send.php" method="post">
 

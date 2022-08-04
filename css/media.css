@@ -7,9 +7,7 @@
 }
 .top-menu-item-4 img{margin-right:1%}
 .header-phone-number {
-	margin-bottom: 30px;
 	text-align: right;
-	padding-right: 15px;
 }
 .header-phone-number::before {
 	left: 49%;
@@ -256,7 +254,7 @@ div.alert_on_bg_white{margin-left:10.5%}
 #wrap-set-btn-2 p{margin-right:-177%}
 .set-btn{display:block;width: 100%; margin-bottom: 30px;}
 .block-1{margin-left:0}
-.wrap-form-call{width:441px;right:0;margin:20% auto 5%}
+.wrap-form-call{width:441px;right:0;margin: 30px auto}
 .map-box-1{width:186px;padding-top:13%}
 .map-box-2{width:229px}
 .map-box{font-size:17px}
