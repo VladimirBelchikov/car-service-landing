@@ -359,11 +359,10 @@ if (isset($_GET['utm_source'])) {
     <div class="container" style="padding-top: 30px; padding-bottom: 50px">
       <?php include './dquiz/dquiz.php' ?>
     </div>
-    <h2 class="subtitle">
-      <span class="accent">Внимание!</span> <br> Компания Центр Технического Оборудования не продает дешевое и
-      некачественное
-      оборудование, приводящее к негативным отзывам и судебным процессам. Мы предлагаем только проверенное оборудование
-      по цене заводов изготовителей и официальной гарантией до 36 месяцев.
+    <h2 class="title">
+      Укомплектуем <span class="danger">любой шиномонтаж и автосервис</span>
+      <br>
+      под ключ на лучших условиях
     </h2>
     <div class="container equipment-container">
       <div class='equipment-container__element'>
@@ -482,7 +481,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат подкатной</span><span>NORDBERG N3203</span></li>
               <li><span>Пневмогайковерт ударный</span><span>NORDBERG ECO NP14085K</span></li>
             </ul>
-            <p class="sets__price">199 856 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">216 923 руб.</p>
+              <p class="sets__price">199 856 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -502,7 +504,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0330</span></li>
               <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
             </ul>
-            <p class="sets__price">224 665 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">252 947 руб.</p>
+              <p class="sets__price">224 665 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -522,7 +527,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0375</span></li>
               <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
             </ul>
-            <p class="sets__price">356 780 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">375 381 руб.</p>
+              <p class="sets__price">356 780 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -542,7 +550,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0335</span></li>
               <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
             </ul>
-            <p class="sets__price">577 253 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">589 940 руб.</p>
+              <p class="sets__price">577 253 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -571,7 +582,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат подкатной</span><span>NORDBERG N3322L</span></li>
               <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
             </ul>
-            <p class="sets__price">762 682 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">794 329 руб.</p>
+              <p class="sets__price">762 682 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -591,7 +605,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат</span><span>TROMMELBERG SD101902</span></li>
               <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
             </ul>
-            <p class="sets__price">887 329 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">902 374 руб.</p>
+              <p class="sets__price">887 329 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -611,7 +628,10 @@ if (isset($_GET['utm_source'])) {
               <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0802</span></li>
               <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
             </ul>
-            <p class="sets__price">760 701 руб.</p>
+            <div class="sets__prices">
+              <p class="sets__old-price">820 178 руб.</p>
+              <p class="sets__price">760 701 руб.</p>
+            </div>
           </div>
           <a class="sets__button" href="#openModal_call">Купить комплект</a>
         </div>
@@ -627,9 +647,9 @@ if (isset($_GET['utm_source'])) {
     <div class="row">
       <div class="section-title section-title-manager">
         <h2>
-          получи консультацию у <span>персонального менеджера</span>
+          10 минут консультации <span>персонального менеджера</span>
           <br>
-          <span>через 10 минут</span> после оставления заявки
+          сэкономит время и деньги на подборе оборудования
         </h2>
       </div>
     </div>
@@ -658,8 +678,7 @@ if (isset($_GET['utm_source'])) {
           <div>
             <p>позвони<br/><i class="fa fa-phone fa-1x"></i><span class="mgo-number-15791"> 8 800 550 5724</span></p>
             <h4>или оставь заявку<br/><span>на звонок</span></h4>
-            <form method="post" action="/sender/send.php" id="form_9" class="sform"
-                  onsubmit="yaCounter38510265.reachGoal('cel10'); return true;">
+            <form method="post" action="/sender/send.php" id="form_9" class="sform">
               <input type="hidden" name="subject" value="Заявка на звонок">
               <div class="wrap-input-name-call">
                 <input class="input-text input-name input-call" type="text" name="name" placeholder="Имя">
@@ -673,7 +692,6 @@ if (isset($_GET['utm_source'])) {
                 <input class="form-button form-1-btn btn-color-2 btn-call" type="submit" name="call"
                        value="перезвонить">
               </div>
-              <div class="call-form-small-text" style="bottom:13%;">за 5 минут</div>
               <div class="compliance" style="font-size:9px; font-weight:300;">
                 <br>
                 <a href="#openModal3" target="_self" style="color:#D3D3D3; text-decoration: underline;">
@@ -756,10 +774,9 @@ if (isset($_GET['utm_source'])) {
   <div class="container">
     <div class="row">
       <div class="wrap-form-credit">
-        <form method="post" action="/sender/send.php" class="sform" id="form_10"
-              onsubmit="yaCounter38510265.reachGoal('cel11'); return true;">
+        <form method="post" action="/sender/send.php" class="sform" id="form_10">
           <h4>хочешь купить в лизинг?<br/></h4>
-          <p>Сделаем рассчет суммы лизинга и отправим <span>прайс лист</span></p>
+          <p>Сделаем расчет и <span>отправим предложение</span></p>
           <input type="hidden" name="subject" value="Отправьте заявку на расчёт суммы кредита">
           <div class="wrap-input-name-credit">
             <input class="input-text input-name-crd input-price input-credit" type="text" name="name" placeholder="Имя">
@@ -917,9 +934,8 @@ if (isset($_GET['utm_source'])) {
   <div>
     <a href="#close" title="Close" class="close"><span></span></a>
     <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" id="form_12" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel2'); return true;">
+      <h4>Оставьте контактные данные, чтобы<br/>наш специалист помог вам выбрать оборудование</h4>
+      <form method="post" action="/sender/send.php" id="form_12" class="sform">
         <input type="hidden" id="ya-city" value="">
         <input type="hidden" name="subject" value="Оставьте имя и телефон и с вами свяжется старший менеджер">
         <div class="wrap-input-name-price">
@@ -963,9 +979,11 @@ if (isset($_GET['utm_source'])) {
         <div class="wrapper-button">
           <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
                  value="Пригласить не тендер">
-          <div class="compliance" style="margin-top:-5%; font-size:9px;"><a href="#openModal3" target="_self"
-                                                                            style="color:#D3D3D3;">Нажимая кнопку, вы
-              даете согласие на обработку персональных данных</a></div>
+          <div class="compliance" style="margin-top:-5%; font-size:9px;">
+            <a href="#openModal3" target="_self" style="color:#D3D3D3;">
+              Нажимая кнопку, вы даете согласие на обработку персональных данных
+            </a>
+          </div>
         </div>
         <input type="hidden" name="typsh" value="Автосервисное">
       </form>
@@ -977,9 +995,8 @@ if (isset($_GET['utm_source'])) {
   <div>
     <a href="#close" title="Close" class="close"><span></span></a>
     <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" id="form_20" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel3'); return true;">
+      <h4>Оставь контактные данные, чтобы<br/>наш специалист помог вам выбрать оборудование</h4>
+      <form method="post" action="/sender/send.php" id="form_20" class="sform">
         <input type="hidden" id="ya-city" value="">
         <input type="hidden" name="subject" value="Footer Оставьте имя и телефон и с вами свяжется старший менеджер">
         <div class="wrap-input-name-price">
@@ -994,8 +1011,10 @@ if (isset($_GET['utm_source'])) {
           <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
                  value="Перезвонить мне">
           <div class="compliance" style="margin-top:-5%;font-size:9px;"><a href="#openModal3" target="_self"
-                                                                           style="color:#D3D3D3;">Нажимая кнопку, вы
-              даете согласие на обработку персональных данных</a></div>
+                                                                           style="color:#D3D3D3;">
+              Нажимая кнопку, вы даете согласие на обработку персональных данных
+            </a>
+          </div>
         </div>
         <input type="hidden" name="typsh" value="Автосервисное">
       </form>
@@ -1008,8 +1027,7 @@ if (isset($_GET['utm_source'])) {
     <a href="#close" title="Close" class="close"><span></span></a>
     <div class="modal-box">
       <h4>Заполните форму<br/>и получите предложение <span id="catalogName2"></span></h4>
-      <form method="post" action="/sender/send.php" id="form_14" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel1'); return true;">
+      <form method="post" action="/sender/send.php" id="form_14" class="sform">
         <input type="hidden" id="ya-city" value="">
         <input type="hidden" name="subject" id="cNameId2" value="">
         <div class="wrap-input-name-price">
@@ -1030,155 +1048,12 @@ if (isset($_GET['utm_source'])) {
   </div>
 </div>
 
-
-<div id="openModal_econom" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Комплект &laquo;эконом&raquo;<br/>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" class="sform" id="form_15"
-            onsubmit="yaCounter44176079.reachGoal('cel11'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject"
-               value="Комплект Эконом Оставьте имя и телефон и с вами свяжется старший менеджер">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf15" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон*" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_15"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Перезвонить мне">
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
-<div id="openModal_professional" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Комплект &laquo;профи&raquo;<br/>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" class="sform" id="form_16"
-            onsubmit="yaCounter41896804.reachGoal('cel12'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject"
-               value="Комплект Профи Оставьте имя и телефон и с вами свяжется старший менеджер">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf16" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон*" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_16"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Перезвонить мне">
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
-<div id="openModal_professional-semiautomatic" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Комплект &laquo;профи - полуавтомат&raquo;<br/>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер
-      </h4>
-      <form method="post" action="/sender/send.php" class="sform" id="form_17"
-            onsubmit="yaCounter41896804.reachGoal('cel13'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject"
-               value="Комплект Профи-полуавтомат Оставьте имя и телефон и с вами свяжется старший менеджер">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf17" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон*" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_17"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Перезвонить мне">
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
-<div id="openModal_professional-automatic" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Комплект &laquo;профи - автомат&raquo;<br/>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" class="sform" id="form_18"
-            onsubmit="yaCounter41896804.reachGoal('cel14'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject"
-               value="Комплект Профи-автомат Оставьте имя и телефон и с вами свяжется старший менеджер">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf18" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон*" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_18"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Перезвонить мне">
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
-<div id="openModal_cargo" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Комплект грузового шиномонтажа<br/>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" class="sform" id="form_19"
-            onsubmit="yaCounter41896804.reachGoal('cel15'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject"
-               value="Комплект грузового шиномонтажа Оставьте имя и телефон и с вами свяжется старший менеджер">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf19" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон*" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_19"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Перезвонить мне">
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
-    </div>
-  </div>
-</div>
-
 <div id="openModal_call" class="modalDialog">
   <div>
     <a href="#close" title="Close" class="close"><span></span></a>
     <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и с тобой свяжется старший менеджер</h4>
-      <form method="post" action="/sender/send.php" id="form_20" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel3'); return true;">
+      <h4>Оставь контактные данные,<br/>с вами свяжется менеджер</h4>
+      <form method="post" action="/sender/send.php" id="form_20" class="sform">
         <input type="hidden" id="ya-city" value="">
         <input type="hidden" name="subject" value="Footer Оставьте имя и телефон и с вами свяжется старший менеджер">
         <div class="wrap-input-name-price">
@@ -1539,36 +1414,6 @@ if (isset($_GET['utm_source'])) {
         </form>
 
       </div>
-    </div>
-  </div>
-</div>
-
-<div id="openModal_2" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close"><span></span></a>
-    <div class="modal-box">
-      <h4>Оставь имя и телефон<br/>и получи каталог <span id="catalogName2"></span></h4>
-      <form method="post" action="/sender/send.php" id="form_14" class="sform"
-            onsubmit="yaCounter44176079.reachGoal('cel1'); return true;">
-        <input type="hidden" id="ya-city" value="">
-        <input type="hidden" name="subject" id="cNameId2" value="">
-        <div class="wrap-input-name-price">
-          <input class="input-text input-modal" type="text" name="name" placeholder="Ваше имя">
-        </div>
-        <div class="wrap-input-telephone-price">
-          <input class="input-text input-modal phone-mask" id="inputf14" maxlength="18" type="text" name="phone"
-                 placeholder="Ваш телефон" required>
-        </div>
-        <div class="alert_on alert_on_modal" id="phone_bottom_14"></div>
-        <div class="wrapper-button">
-          <input class="form-button form-1-btn btn-color-2 btn-modal" type="submit" name="submit"
-                 value="Получить предложение">
-          <div class="compliance" style="margin-top:-5%;font-size:9px;"><a href="#openModal3" target="_self"
-                                                                           style="color:#D3D3D3;">Нажимая кнопку, вы
-              даете согласие на обработку персональных данных</a></div>
-        </div>
-        <input type="hidden" name="typsh" value="Автосервисное">
-      </form>
     </div>
   </div>
 </div>

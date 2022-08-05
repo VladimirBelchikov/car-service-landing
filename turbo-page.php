@@ -132,12 +132,188 @@
         })
       </script>
 
-      <h2 class="subtitle">
-        <span class="accent">Внимание!</span>
-        <br>
-        Компания Центр Технического Оборудования не продает дешевое и некачественное оборудование, приводящее
-        к негативным отзывам и судебным процессам. Мы предлагаем только проверенное оборудование
-        по цене заводов изготовителей и официальной гарантией до 36 месяцев.
+
+      <section class="sets passenger">
+        <h2 class="subtitle sets__title">ГОТОВЫЕ КОМПЛЕКТЫ С ВЫГОДОЙ ДО 10 ПРОЦЕНТОВ</h2>
+        <h2 class="subtitle sets__subtitle">Комплекты для легкового шиномонтажа</h2>
+        <div class="swiper sets__wrapper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/econom.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_gray">Эконом</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>NORDBERG 4638E</span></li>
+                    <li><span>Балансировочный станок</span><span>NORDBERG ECO 4523C</span></li>
+                    <li><span>Компрессор воздушный</span><span>NORDBERG ECO NCE100/400</span></li>
+                    <li><span>Домкрат подкатной</span><span>NORDBERG N3203</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG ECO NP14085K</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">210 375 руб.</p>
+                    <p class="sets__price">199 856 руб.</p>
+                  </div>
+                </div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/specialist.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_blue">Специалист</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1810E</span></li>
+                    <li><span>Балансировочный станок</span><span>TROMMELBERG CB1930E</span></li>
+                    <li><span>Компрессор воздушный</span><span>HUBERTH RP103100</span></li>
+                    <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0330</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">249 628 руб.</p>
+                    <p class="sets__price">224 665 руб.</p>
+                  </div>
+                </div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/semi-auto.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_red">Профи-полуавтомат</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1860</span></li>
+                    <li><span>Балансировочный станок</span><span>TROMMELBERG CB1960B</span></li>
+                    <li><span>Компрессор воздушный</span><span>HUBERTH RP306250</span></li>
+                    <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0375</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">396 423 руб.</p>
+                    <p class="sets__price">356 780 руб.</p>
+                  </div>
+                </div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/prof.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_red">Профи-автомат</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1885</span></li>
+                    <li><span>Балансировочный станок</span><span>TROMMELBERG CB1990B</span></li>
+                    <li><span>Компрессор воздушный</span><span>HUBERTH RP309250</span></li>
+                    <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0335</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>HUBERTH RP207422</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">583 573 руб.</p>
+                    <p class="sets__price">577 253 руб.</p>
+                  </div>
+                </div>
+                <div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sets cargo">
+        <h2 class="subtitle sets__subtitle">Комплекты для грузового шиномонтажа</h2>
+        <div class="swiper sets__wrapper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/econom.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_gray">Эконом</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>NORDBERG 46TRKE</span></li>
+                    <li><span>Балансировочный станок</span><span>NORDBERG 45TRK</span></li>
+                    <li><span>Компрессор поршневой</span><span>REMEZA СБ4/Ф-500.ав585/16</span></li>
+                    <li><span>Домкрат подкатной</span><span>NORDBERG N3322L</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">802 824 руб.</p>
+                    <p class="sets__price">762 682 руб.</p>
+                  </div>
+                </div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/specialist.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_blue">Специалист</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>SIVIK ГШС-515А</span></li>
+                    <li><span>Балансировочный станок</span><span>SIVIK TRUCKER STANDARD</span></li>
+                    <li><span>Компрессор поршневой</span><span>REMEZA СБ4/Ф-500.АВ858/16</span></li>
+                    <li><span>Домкрат</span><span>TROMMELBERG SD101902</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">930 031 руб.</p>
+                    <p class="sets__price">887 329 руб.</p>
+                  </div>
+                </div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="sets__item-container">
+                <div class="sets__item-img-container">
+                  <img src="./img/sets/semi-auto.png" alt="" class="sets__item-img">
+                </div>
+                <div class="sets__text-block">
+                  <h3 class="sets__item-title bg_red">Профи</h3>
+                  <ul class="sets__item-list">
+                    <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1580</span></li>
+                    <li><span>Балансировочный станок</span><span>TROMMELBERG CB1960B</span></li>
+                    <li><span>Компрессор воздушный</span><span>HUBERTH RP306250</span></li>
+                    <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0802</span></li>
+                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+                  </ul>
+                  <div class="sets__prices">
+                    <p class="sets__old-price">845 224 руб.</p>
+                    <p class="sets__price">760 701 руб.</p>
+                  </div>
+                </div>
+                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <h2 class="reviews-container__title">
+        Укомплектуем <span class="danger">любой шиномонтаж и автосервис</span> под ключ на лучших условиях
       </h2>
       <div class="container equipment-container swiper">
         <div class="swiper-wrapper">
@@ -235,8 +411,6 @@
               <p>Электростанции<br/>от 31 724 р.</p></a>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
 
       <section class="section-main reviews-container" id="rewmap">
@@ -308,15 +482,13 @@
         </form>
         <div class="agreement">
 				<span class="agreement-text">
-					Нажимая «Получить каталог», даю согласие ООО Центр технического
-					оборудования на обработку введенной информации и принимаю условия
+					Нажимая «Получить консультацию», вы даёте согласие на обработку персональных данынх
 				</span>
-          <a href="https://yandex.ru/legal/rules/" class="agreement-link">Пользовательского соглашения</a>
+<!--          <a href="https://yandex.ru/legal/rules/" class="agreement-link">Пользовательского соглашения</a>-->
           <span class="agreement-text">
-					ООО "Яндекс".
 				</span>
           <span class="agreement-full-modal">
-						<a href="#openModal_agreement">Подробнее</a>
+<!--						<a href="#openModal_agreement">Подробнее</a>-->
 					</span>
         </div>
       </div>
@@ -329,7 +501,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-middle">
-    © ЦЕНТР ТЕХНИЧЕСКОГО ОБОРУДОВАНИЯ 2019<br>
+    © ЦЕНТР ТЕХНИЧЕСКОГО ОБОРУДОВАНИЯ 2022<br>
     <span class="footer-middle-agreement-modal">
             <a href="#openModal_agreement_footer">Юридическая информация</a>
         </span>

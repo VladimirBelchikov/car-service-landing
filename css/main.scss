@@ -28,6 +28,7 @@ iframe {
 
 body {
   overflow-x: hidden;
+  font-family: "Podkova", serif;
 }
 
 * {
@@ -2645,10 +2646,12 @@ iframe.marquiz__inline-frame {
 }
 
 .subtitle {
-  text-align: center;
-  font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  font-size: 20px;
+  text-align: center;
+  font-family: "Podkova", serif;
 }
 
 .accent {
@@ -2737,11 +2740,21 @@ iframe.marquiz__inline-frame {
     }
   }
 
-  &__price {
+  &__prices {
     margin-top: 15px;
     padding-left: 10px;
-    font-size: 30px;
     font-weight: 900;
+  }
+
+  &__price {
+    font-size: 30px;
+    color: #363636;
+  }
+
+  &__old-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #454545;
   }
 
   &__button {
@@ -2981,4 +2994,17 @@ iframe.marquiz__inline-frame {
       }
     }
   }
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Podkova", serif;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.danger {
+  color: var(--accent);
 }
