@@ -763,7 +763,7 @@ if (isset($_GET['utm_source'])) {
       </div>
       <div class="col-md-6 col-sm-6 col-xs-6">
         <div class="contract-text">
-          <p>Отгружаем оборудование <br/>только по официальному<br/> договору поставки</p>
+          <p>Отгружаем оборудование <br/>по официальному<br/> договору поставки</p>
         </div>
       </div>
     </div>
