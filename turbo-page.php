@@ -242,20 +242,20 @@
             <div class="swiper-slide">
               <div class="sets__item-container">
                 <div class="sets__item-img-container">
-                  <img src="./img/sets/econom.png" alt="" class="sets__item-img">
+                  <img src="./img/sets/econom.jpg" alt="" class="sets__item-img">
                 </div>
                 <div class="sets__text-block">
                   <h3 class="sets__item-title bg_gray">Эконом</h3>
                   <ul class="sets__item-list">
                     <li><span>Шиномонтажный станок</span><span>NORDBERG 46TRKE</span></li>
-                    <li><span>Балансировочный станок</span><span>NORDBERG 45TRK</span></li>
-                    <li><span>Компрессор поршневой</span><span>REMEZA СБ4/Ф-500.ав585/16</span></li>
+                    <li><span>Балансировочный станок</span><span>NORDBERG 45TRKE</span></li>
+                    <li><span>Компрессор поршневой</span><span>AIRCAST СБ 4/Ф-500 LB 75</span></li>
                     <li><span>Домкрат подкатной</span><span>NORDBERG N3322L</span></li>
-                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+                    <li><span>Пневмогайковерт</span><span>NORDBERG IT4250</span></li>
                   </ul>
                   <div class="sets__prices">
-                    <p class="sets__old-price">802 824 руб.</p>
-                    <p class="sets__price">762 682 руб.</p>
+                    <p class="sets__old-price">745 358 руб.</p>
+                    <p class="sets__price">708 092 руб.</p>
                   </div>
                 </div>
                 <a class="sets__button" href="#openModal_2">Купить комплект</a>
@@ -265,20 +265,20 @@
             <div class="swiper-slide">
               <div class="sets__item-container">
                 <div class="sets__item-img-container">
-                  <img src="./img/sets/specialist.png" alt="" class="sets__item-img">
+                  <img src="./img/sets/spec.jpg" alt="" class="sets__item-img">
                 </div>
                 <div class="sets__text-block">
                   <h3 class="sets__item-title bg_blue">Специалист</h3>
                   <ul class="sets__item-list">
                     <li><span>Шиномонтажный станок</span><span>SIVIK ГШС-515А</span></li>
-                    <li><span>Балансировочный станок</span><span>SIVIK TRUCKER STANDARD</span></li>
-                    <li><span>Компрессор поршневой</span><span>REMEZA СБ4/Ф-500.АВ858/16</span></li>
-                    <li><span>Домкрат</span><span>TROMMELBERG SD101902</span></li>
-                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+                    <li><span>Балансировочный станок</span><span>SIVIK TRUCKER СБМП-200 СТ</span></li>
+                    <li><span>Компрессор поршневой</span><span>REMEZA СБ 4/Ф-500.LT100/16-7.5</span></li>
+                    <li><span>Домкрат подкатной</span><span>СТАНКОИМПОРТ SD1903</span></li>
+                    <li><span>Пневмогайковерт</span><span>Licota PAW-10048</span></li>
                   </ul>
                   <div class="sets__prices">
-                    <p class="sets__old-price">930 031 руб.</p>
-                    <p class="sets__price">887 329 руб.</p>
+                    <p class="sets__old-price">1 005 529 руб.</p>
+                    <p class="sets__price">955 254 руб.</p>
                   </div>
                 </div>
                 <a class="sets__button" href="#openModal_2">Купить комплект</a>
@@ -288,20 +288,20 @@
             <div class="swiper-slide">
               <div class="sets__item-container">
                 <div class="sets__item-img-container">
-                  <img src="./img/sets/semi-auto.png" alt="" class="sets__item-img">
+                  <img src="./img/sets/profi.jpg" alt="" class="sets__item-img">
                 </div>
                 <div class="sets__text-block">
                   <h3 class="sets__item-title bg_red">Профи</h3>
                   <ul class="sets__item-list">
-                    <li><span>Шиномонтажный станок</span><span>TROMMELBERG 1580</span></li>
-                    <li><span>Балансировочный станок</span><span>TROMMELBERG CB1960B</span></li>
-                    <li><span>Компрессор воздушный</span><span>HUBERTH RP306250</span></li>
-                    <li><span>Домкрат подкатной</span><span>TROMMELBERG XRD0802</span></li>
-                    <li><span>Пневмогайковерт ударный</span><span>NORDBERG IT4250</span></li>
+                    <li><span>Шиномонтажный станок</span><span>NORDBERG 46TRK46</span></li>
+                    <li><span>Балансировочный станок</span><span>NORDBERG 45TRK</span></li>
+                    <li><span>Компрессор поршневой</span><span>AIRCAST СБ 4/Ф-500.LT100/16</span></li>
+                    <li><span>Домкрат подкатной</span><span>NORDBERG N3350L</span></li>
+                    <li><span>Пневмогайковерт</span><span>NORDBERG IT4250</span></li>
                   </ul>
                   <div class="sets__prices">
-                    <p class="sets__old-price">845 224 руб.</p>
-                    <p class="sets__price">760 701 руб.</p>
+                    <p class="sets__old-price">1 241 140 руб.</p>
+                    <p class="sets__price">1 179 084 руб.</p>
                   </div>
                 </div>
                 <a class="sets__button" href="#openModal_2">Купить комплект</a>

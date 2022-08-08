@@ -2789,6 +2789,15 @@ iframe.marquiz__inline-frame {
   left: 0;
 }
 
+.cargo {
+  padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  .cargo {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .cargo .swiper-button-prev,
 .cargo .swiper-button-next {
