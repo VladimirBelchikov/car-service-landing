@@ -110,6 +110,10 @@
         <button class="scroll-button">
           Подобрать оборудование
         </button>
+        <a class="whatsapp-button"
+           href='https://wa.me/79130707688?text=Добрый день. Пишу с сайта автосервисное.оборудование5.рф. Хочу подобрать оборудование и узнать стоимость.'>
+          Написать в What's App
+        </a>
       </div>
       <div class="main-image">
         <img src="img/turbo_images/AutoService.jpg" alt="#">
@@ -227,7 +231,7 @@
                   </div>
                 </div>
                 <div>
-                <a class="sets__button" href="#openModal_2">Купить комплект</a>
+                  <a class="sets__button" href="#openModal_2">Купить комплект</a>
                 </div>
               </div>
             </div>
@@ -484,7 +488,7 @@
 				<span class="agreement-text">
 					Нажимая «Получить консультацию», вы даёте согласие на обработку персональных данынх
 				</span>
-<!--          <a href="https://yandex.ru/legal/rules/" class="agreement-link">Пользовательского соглашения</a>-->
+          <!--          <a href="https://yandex.ru/legal/rules/" class="agreement-link">Пользовательского соглашения</a>-->
           <span class="agreement-text">
 				</span>
           <span class="agreement-full-modal">

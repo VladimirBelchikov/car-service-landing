@@ -145,11 +145,13 @@ section .button-list {
 }
 
 section .scroll-button {
+  width: 280px;
   font-size: 20px;
   color: #ffffff;
-  background-color: #2ace28;
+  background-color: var(--accent);
   height: inherit;
   padding: 10px 20px;
+  margin-bottom: 10px;
 }
 
 section .button-list span {
@@ -175,10 +177,17 @@ section .button-list a {
   text-decoration: none;
 }
 
-section .button-list a .whatsapp-button {
+section .button-list .whatsapp-button {
+  display: block;
+  width: 280px;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  line-height: normal;
   color: #fff;
   background-color: #2ace28;
-  height: inherit;
+  box-sizing: border-box;
 }
 
 section .button-list a .viber-button {
